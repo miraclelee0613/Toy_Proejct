@@ -1,7 +1,7 @@
 @echo off
 rem 명령어 복창 끔
 
-rem ### 버전정보	:	v1.1.2_alpha for team
+rem ### 버전정보	:	v1.2.0_stable for team
 rem ### 코드정보	:	https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=superyeoju&logNo=221747717398
 rem ### updated by LJS 
 
@@ -33,6 +33,8 @@ rem 현재 파일 위치 경로를 작업 위치로
 title 현재 경로 : %cd%
 :notice
 rem echo 	## 업데이트 내역 ##
+rem 		## 1.2.0 팀을 위한 그룹 폴더 생성기 릴리즈1
+rem 		## 1.1.3 작은 변경
 rem 		## 1.1.2 몇가지 코드 수정 및 최적화
 rem 		## 1.1.1 ANSI코드로 변경(이전 버전은 글자 깨질 수 있음)
 rem 		## 1.1.1 %를 분수로 변경
