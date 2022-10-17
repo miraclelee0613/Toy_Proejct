@@ -1,57 +1,59 @@
-@echo off
-rem ëª…ë ¹ì–´ ë³µì°½ ë”
+rem @echo off
+rem ¸í·É¾î º¹Ã¢ ²û
 
-rem ### ë²„ì „ì •ë³´	:	v1.0.1 A_stable
-rem ### ì½”ë“œì •ë³´	:	https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=superyeoju&logNo=221747717398
+rem ### ¹öÀüÁ¤º¸	:	v1.1.1_alpha for team
+rem ### ÄÚµåÁ¤º¸	:	https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=superyeoju&logNo=221747717398
 rem ### updated by LJS 
 
 rem chcp 65001>nul
-rem ì°¸ê³  https://otrodevym.tistory.com/entry/windows-10-cmd-%EC%9D%B8%EC%BD%94%EB%94%A9-utf-8-%EC%84%A4%EC%A0%95-%EB%B0%A9%EB%B2%95-949-65001-1
+rem Âü°í https://otrodevym.tistory.com/entry/windows-10-cmd-%EC%9D%B8%EC%BD%94%EB%94%A9-utf-8-%EC%84%A4%EC%A0%95-%EB%B0%A9%EB%B2%95-949-65001-1
 
 setLocal EnableDelayedExpansion
-rem ì°¸ê³  https://kkamagistory.tistory.com/881
+rem Âü°í https://kkamagistory.tistory.com/881
 
-rem   0 = ê²€ì •ìƒ‰       8 = íšŒìƒ‰
-rem   1 = íŒŒëž‘ìƒ‰       9 = ì—°í•œ íŒŒëž‘ìƒ‰
-rem   2 = ì´ˆë¡ìƒ‰       A = ì—°í•œ ì´ˆë¡ìƒ‰
-rem   3 = ì˜¥ìƒ‰         B = ì—°í•œ ì˜¥ìƒ‰
-rem   4 = ë¹¨ê°•ìƒ‰       C = ì—°í•œ ë¹¨ê°•ìƒ‰
-rem   5 = ìžì£¼ìƒ‰       D = ì—°í•œ ìžì£¼ìƒ‰
-rem   6 = ë…¸ëž‘ìƒ‰       E = ì—°í•œ ë…¸ëž‘ìƒ‰
-rem   7 = í°ìƒ‰         F = ë°ì€ í°ìƒ‰
+rem   0 = °ËÁ¤»ö       8 = È¸»ö
+rem   1 = ÆÄ¶û»ö       9 = ¿¬ÇÑ ÆÄ¶û»ö
+rem   2 = ÃÊ·Ï»ö       A = ¿¬ÇÑ ÃÊ·Ï»ö
+rem   3 = ¿Á»ö         B = ¿¬ÇÑ ¿Á»ö
+rem   4 = »¡°­»ö       C = ¿¬ÇÑ »¡°­»ö
+rem   5 = ÀÚÁÖ»ö       D = ¿¬ÇÑ ÀÚÁÖ»ö
+rem   6 = ³ë¶û»ö       E = ¿¬ÇÑ ³ë¶û»ö
+rem   7 = Èò»ö         F = ¹àÀº Èò»ö
 rem color 09
-rem ì²«ì§¸ ìžë¦¬ëŠ” ë°°ê²½, ë‘˜ì§¸ ìžë¦¬ëŠ” ê¸€ìžìƒ‰
+rem Ã¹Â° ÀÚ¸®´Â ¹è°æ, µÑÂ° ÀÚ¸®´Â ±ÛÀÚ»ö
 
 rem mode con cols=60 lines=30
-rem ì½˜ì†”ì°½ í¬ê¸° ì§€ì •
+rem ÄÜ¼ÖÃ¢ Å©±â ÁöÁ¤
 
 rem ####################################
 
 cd /d %~dp0
-rem í˜„ìž¬ íŒŒì¼ ìœ„ì¹˜ ê²½ë¡œë¥¼ ìž‘ì—… ìœ„ì¹˜ë¡œ
+rem ÇöÀç ÆÄÀÏ À§Ä¡ °æ·Î¸¦ ÀÛ¾÷ À§Ä¡·Î
 
-title í˜„ìž¬ ê²½ë¡œ : %cd%
+title ÇöÀç °æ·Î : %cd%
 :notice
-echo 	## v1.0.3 ì—…ë°ì´íŠ¸ ë‚´ì—­ ##
-echo 	## Aê·¸ë£¹ ì™„ì„± ##
-echo 	## Bê·¸ë£¹ ì™„ì„± ##
-echo 	## Cê·¸ë£¹ ì™„ì„± ##
-echo 	## Dê·¸ë£¹ ì§„í–‰ì¤‘ ##
-echo 	## ë°°ì¹˜íŒŒì¼ ìž‘ì—… ì±…ìž„ìžë‹˜ê»˜ í—ˆë½ ë§¡ìŒ ##
-echo 	## â€»ì ‘ë‘ ëŒ€ë¶„ë¥˜ëŠ” ë¹¼ëŠ” ê±¸ë¡œ ê²°ë¡ ë‚¨. ë¶„ê¸° ë‚˜ëˆŒ ê²ƒ ##
-echo.
-echo 	í”„ë¡œê·¸ëž¨ì„ ì‹¤í–‰í•˜ë ¤ë©´ ì•„ë¬´ í‚¤ë‚˜ ëˆ„ë¥´ì„¸ìš”
-pause
-goto ChoiceGroup
+rem echo 	## ¾÷µ¥ÀÌÆ® ³»¿ª ##
+rem 		## 1.1.1 ANSIÄÚµå·Î º¯°æ(ÀÌÀü ¹öÀüÀº ±ÛÀÚ ±úÁú ¼ö ÀÖÀ½)
+rem 		## 1.1.1 %°¡ ¾È ³ª¿À´Â Çö»ó ¼öÁ¤
+rem echo 	## 1.0.1 A±×·ì ¿Ï¼º ##
+rem echo 	## 1.0.2 B±×·ì ¿Ï¼º ##
+rem echo 	## 1.0.3 C±×·ì ¿Ï¼º ##
+rem echo 	## 1.1.0 D±×·ì ¿Ï¼º ##
+rem echo 	## 1.0.2 ¹èÄ¡ÆÄÀÏ ÀÛ¾÷ Ã¥ÀÓÀÚ´Ô²² Çã¶ô ¸ÃÀ½ ##
+rem echo 	## 1.0.3 ¡ØÁ¢µÎ ´ëºÐ·ù´Â »©´Â °É·Î °á·Ð³². ºÐ±â ³ª´­ °Í ##
+rem echo.
+rem echo 	ÇÁ·Î±×·¥À» ½ÇÇàÇÏ·Á¸é ¾Æ¹« Å°³ª ´©¸£¼¼¿ä
+rem pause
+rem goto ChoiceGroup
 
 :ChoiceGroup
-echo 	## ê·¸ë£¹í´ë” ìžë™ìƒì„±ê¸°ìž…ë‹ˆë‹¤ ##
-echo 	## ê·¸ë£¹ì„ ìž…ë ¥í•˜ì„¸ìš” ##
-echo 	ì˜ˆ) B-1ê·¸ë£¹ : b(ëŒ€ì†Œë¬¸ìž ë¬´ê´€) ì—”í„° 1 ì—”í„°
+echo 	## ±×·ìÆú´õ ÀÚµ¿»ý¼º±âÀÔ´Ï´Ù ##
+echo 	## ±×·ìÀ» ÀÔ·ÂÇÏ¼¼¿ä ##
+echo 	¿¹) B-1±×·ì : b(´ë¼Ò¹®ÀÚ ¹«°ü) ¿£ÅÍ 1 ¿£ÅÍ
 set /p group=Group: 
 
-rem echo ## ê·¸ë£¹ ë²ˆí˜¸ë¥¼ ìž…ë ¥í•˜ì„¸ìš” ##
-rem echo ## ì˜ˆ) B-1ì´ë©´ 1 ìž…ë ¥
+rem echo ## ±×·ì ¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä ##
+rem echo ## ¿¹) B-1ÀÌ¸é 1 ÀÔ·Â
 set /p groupNum=GroupNumber : 
 goto confirm
 
@@ -61,17 +63,17 @@ if %group% equ b set group=B
 if %group% equ c set group=C
 if %group% equ d set group=D
 
-echo ## ì„ íƒí•œ ê·¸ë£¹: %group%-%groupNum%
-echo ì‹¤í–‰í•˜ì‹œê² ìŠµë‹ˆê¹Œ? 
+echo ## ¼±ÅÃÇÑ ±×·ì: %group%-%groupNum% ##
+echo ½ÇÇàÇÏ½Ã°Ú½À´Ï±î? 
 set /p confirm= Y / N : 
 if /i %confirm% equ y goto gotoGroup
-if /i %confirm% equ N goto cls&ChoiceGroup
+if /i %confirm% equ N cls&goto ChoiceGroup
 cls 
 goto ChoiceGroup
 
 :gotoGroup
 rem @echo on
-title %group%-%groupNum% í˜„ìž¬ ê²½ë¡œ : %cd%
+title %group%-%groupNum% ÇöÀç °æ·Î : %cd%
 if /i %group% equ A goto A
 if /i %group% equ B goto B
 if /i %group% equ C goto C
@@ -87,172 +89,172 @@ goto ChoiceGroup
 
 :B
 echo B
-for %%i in (1,1,10) do (
+for /l %%i in (1,1,10) do (
 if %groupNum% equ %%i goto B%%i
 )
 goto ChoiceGroup
 
 :C
 echo C
-for %%i in (1,1,10) do (
+for /l %%i in (1,1,10) do (
 if %groupNum% equ %%i goto C%%i
 )
 goto ChoiceGroup
 
 :D
-for %%i in (1,1,10) do (
+for /l %%i in (1,1,5) do (
 if %groupNum% equ %%i goto D%%i
 )
 goto ChoiceGroup
 
 :A1
 cls
-mkdir "02_ë¹„ ì†Œë¦¬"
-echo 10%...
-mkdir "02_ê°œ ì†Œë¦¬"
-echo 20%...
-mkdir "01_ê¸°ì¹¨ ì†Œë¦¬"
-echo 30%...
-mkdir "01_ê°€ê¸€í•˜ëŠ” ì†Œë¦¬"
-echo 40%...
-mkdir "01_ë¬¼ ë§ˆì‹œëŠ” ì†Œë¦¬"
+mkdir "02_ºñ ¼Ò¸®"
+echo 10^%...
+mkdir "02_°³ ¼Ò¸®"
+echo 20^%...
+mkdir "01_±âÄ§ ¼Ò¸®"
+echo 30^%...
+mkdir "01_°¡±ÛÇÏ´Â ¼Ò¸®"
+echo 40^%...
+mkdir "01_¹° ¸¶½Ã´Â ¼Ò¸®"
 echo 50%
-mkdir "01_ê³¼ìž ë¨¹ëŠ” ì†Œë¦¬"
-echo 60%...
-mkdir "01_ì½” í›Œì©ê±°ë¦¬ëŠ” ì†Œë¦¬"
-echo 70%...
-mkdir "01_ì½” í‘¸ëŠ” ì†Œë¦¬"
-echo 80%...
-mkdir "01_ê»Œ ì”¹ëŠ” ì†Œë¦¬"
-echo 90%...
-mkdir "01_ë•…ì½© ë¨¹ëŠ” ì†Œë¦¬"
+mkdir "01_°úÀÚ ¸Ô´Â ¼Ò¸®"
+echo 60^%...
+mkdir "01_ÄÚ ÈÇÂ½°Å¸®´Â ¼Ò¸®"
+echo 70^%...
+mkdir "01_ÄÚ Çª´Â ¼Ò¸®"
+echo 80^%...
+mkdir "01_²­ ¾Ã´Â ¼Ò¸®"
+echo 90^%...
+mkdir "01_¶¥Äá ¸Ô´Â ¼Ò¸®"
 
 goto quit
 
 :A2
 cls
-mkdir "02_ë°”ëžŒ ì†Œë¦¬"
-mkdir "01_ì¹¨ ë±‰ëŠ” ì†Œë¦¬"
-mkdir "01_ì›ƒìŒ ì†Œë¦¬"
-mkdir "01_ë½€ë½€í•˜ëŠ” ì†Œë¦¬"
-mkdir "01_ì•“ëŠ” ì†Œë¦¬"
-mkdir "01_ê¸°í•©ë„£ëŠ” ì†Œë¦¬"
-mkdir "03_ìžì „ê±° ì¢…ì†Œë¦¬"
-mkdir "03_íœ´ëŒ€í° ì†Œë¦¬"
-mkdir "03_ë…¸í¬í•˜ëŠ” ì†Œë¦¬"
-mkdir "03_ì¢…ì´ êµ¬ê¸°ëŠ” ì†Œë¦¬"
+mkdir "02_¹Ù¶÷ ¼Ò¸®"
+mkdir "01_Ä§ ¹ñ´Â ¼Ò¸®"
+mkdir "01_¿ôÀ½ ¼Ò¸®"
+mkdir "01_»Ç»ÇÇÏ´Â ¼Ò¸®"
+mkdir "01_¾Î´Â ¼Ò¸®"
+mkdir "01_±âÇÕ³Ö´Â ¼Ò¸®"
+mkdir "03_ÀÚÀü°Å Á¾¼Ò¸®"
+mkdir "03_ÈÞ´ëÆù ¼Ò¸®"
+mkdir "03_³ëÅ©ÇÏ´Â ¼Ò¸®"
+mkdir "03_Á¾ÀÌ ±¸±â´Â ¼Ò¸®"
 
 goto quit
 
 
 :A3
 cls
-mkdir "02_ê·€ëšœë¼ë¯¸ ì†Œë¦¬"
-mkdir "03_ê¸ˆì† ë¶€ë”ªížˆëŠ” ì†Œë¦¬"
-mkdir "03_ìº” ì°Œê·¸ëŸ¬ì§€ëŠ” ì†Œë¦¬"
-mkdir "03_ë„ì–´ë½ ì†Œë¦¬"
-mkdir "03_ë°”ì½”ë“œ ì°ëŠ” ì†Œë¦¬"
-mkdir "03_í•„ê¸° í•˜ëŠ” ì†Œë¦¬"
-mkdir "03_íƒ€ìž ì¹˜ëŠ” ì†Œë¦¬"
-mkdir "03_í…Œì´í”„ ì†Œë¦¬"
-mkdir "03_ë¯¹ì„œê¸° ê°€ëŠ” ì†Œë¦¬"
-mkdir "03_ì—°í•„ê¹Žì´ ì†Œë¦¬"
+mkdir "02_±Í¶Ñ¶ó¹Ì ¼Ò¸®"
+mkdir "03_±Ý¼Ó ºÎµúÈ÷´Â ¼Ò¸®"
+mkdir "03_Äµ Âî±×·¯Áö´Â ¼Ò¸®"
+mkdir "03_µµ¾î¶ô ¼Ò¸®"
+mkdir "03_¹ÙÄÚµå Âï´Â ¼Ò¸®"
+mkdir "03_ÇÊ±â ÇÏ´Â ¼Ò¸®"
+mkdir "03_Å¸ÀÚ Ä¡´Â ¼Ò¸®"
+mkdir "03_Å×ÀÌÇÁ ¼Ò¸®"
+mkdir "03_¹Í¼­±â °¡´Â ¼Ò¸®"
+mkdir "03_¿¬ÇÊ±ðÀÌ ¼Ò¸®"
 
 goto quit
 
 
 :A4
 cls
-mkdir "02_ëª¨ê¸° ì†Œë¦¬"
-mkdir "03_ìˆ˜ì„¸ë¯¸ì§ˆ ì†Œë¦¬"
-mkdir "03_ê°€ìŠ¤ë ˆì¸ì§€ ì†Œë¦¬"
-mkdir "03_ë¹»ëŠ” ì†Œë¦¬"
-mkdir "03_ìŒ€ ì†Œë¦¬"
-mkdir "03_ë³µí•©ê¸° ì†Œë¦¬"
-mkdir "03_ë²¨í¬ë¡œ ì†Œë¦¬"
-mkdir "03_ìœ ë¦¬ ë¬¸ì§€ë¥´ëŠ” ì†Œë¦¬"
-mkdir "03_í”¼ë¦¬ ì†Œë¦¬"
-mkdir "03_ë©œë¡œë””ì–¸ ì†Œë¦¬"
+mkdir "02_¸ð±â ¼Ò¸®"
+mkdir "03_¼ö¼¼¹ÌÁú ¼Ò¸®"
+mkdir "03_°¡½º·¹ÀÎÁö ¼Ò¸®"
+mkdir "03_»¨´Â ¼Ò¸®"
+mkdir "03_½Ò ¼Ò¸®"
+mkdir "03_º¹ÇÕ±â ¼Ò¸®"
+mkdir "03_º§Å©·Î ¼Ò¸®"
+mkdir "03_À¯¸® ¹®Áö¸£´Â ¼Ò¸®"
+mkdir "03_ÇÇ¸® ¼Ò¸®"
+mkdir "03_¸á·Îµð¾ð ¼Ò¸®"
 
 goto quit
 
 
 :A5
 cls
-mkdir "02_ë¹„ë‘˜ê¸° ì†Œë¦¬"
-mkdir "03_ê³¼ì¼(ì•¼ì±„)ê¹ŽëŠ” ì†Œë¦¬"
-mkdir "03_íŒ½ì´ ì¹˜ëŠ” ì†Œë¦¬"
-mkdir "03_ì—´ì‡  ë”°ëŠ” ì†Œë¦¬"
-mkdir "03_ì¼€ì´ë¸”íƒ€ì´ ì†Œë¦¬"
-mkdir "03_ì½”í„¸ì •ë¦¬ê¸° ì†Œë¦¬"
-mkdir "03_ë¹„ë° ì†Œë¦¬"
-mkdir "03_ëž©í•‘ ì†Œë¦¬"
-mkdir "03_í˜¸ë‘ ê¹ŒëŠ” ì†Œë¦¬"
-mkdir "03_ë ˆê³  ì†Œë¦¬"
+mkdir "02_ºñµÑ±â ¼Ò¸®"
+mkdir "03_°úÀÏ(¾ßÃ¤)±ð´Â ¼Ò¸®"
+mkdir "03_ÆØÀÌ Ä¡´Â ¼Ò¸®"
+mkdir "03_¿­¼è µû´Â ¼Ò¸®"
+mkdir "03_ÄÉÀÌºíÅ¸ÀÌ ¼Ò¸®"
+mkdir "03_ÄÚÅÐÁ¤¸®±â ¼Ò¸®"
+mkdir "03_ºñµ¥ ¼Ò¸®"
+mkdir "03_·¦ÇÎ ¼Ò¸®"
+mkdir "03_È£µÎ ±î´Â ¼Ò¸®"
+mkdir "03_·¹°í ¼Ò¸®"
 
 goto quit
 
 
 :A6
 cls
-mkdir "01_ì–¼ìŒ ë¨¹ëŠ” ì†Œë¦¬"
-mkdir "01_ì‚¬íƒ• ë¨¹ëŠ” ì†Œë¦¬"
-mkdir "01_ì•¼ì±„ ë¨¹ëŠ” ì†Œë¦¬"
-mkdir "01_ì‚¬ê³¼ ë¨¹ëŠ” ì†Œë¦¬"
-mkdir "01_ìˆ˜ë°• ë¨¹ëŠ” ì†Œë¦¬"
-mkdir "01_ë°”ê²ŒíŠ¸ ë¨¹ëŠ” ì†Œë¦¬"
-mkdir "01_ìƒë¼ë©´ ë¨¹ëŠ” ì†Œë¦¬"
-mkdir "01_ë°° ë¨¹ëŠ” ì†Œë¦¬"
-mkdir "01_ë¬´ ë¨¹ëŠ” ì†Œë¦¬"
-mkdir "01_ì‹œë¦¬ì–¼ ë¨¹ëŠ” ì†Œë¦¬"
+mkdir "01_¾óÀ½ ¸Ô´Â ¼Ò¸®"
+mkdir "01_»çÅÁ ¸Ô´Â ¼Ò¸®"
+mkdir "01_¾ßÃ¤ ¸Ô´Â ¼Ò¸®"
+mkdir "01_»ç°ú ¸Ô´Â ¼Ò¸®"
+mkdir "01_¼ö¹Ú ¸Ô´Â ¼Ò¸®"
+mkdir "01_¹Ù°ÔÆ® ¸Ô´Â ¼Ò¸®"
+mkdir "01_»ý¶ó¸é ¸Ô´Â ¼Ò¸®"
+mkdir "01_¹è ¸Ô´Â ¼Ò¸®"
+mkdir "01_¹« ¸Ô´Â ¼Ò¸®"
+mkdir "01_½Ã¸®¾ó ¸Ô´Â ¼Ò¸®"
 
 goto quit
 
 
 :A7
 cls
-mkdir "02_ìƒˆ ì†Œë¦¬"
-mkdir "01_ë°•ìˆ˜ ì†Œë¦¬"
-mkdir "01_ì„¸ìˆ˜ í•˜ëŠ” ì†Œë¦¬"
-mkdir "01_ë”°ê·€(ì°°ì‹¹ê±°ë¦¬ëŠ”)ì†Œë¦¬"
-mkdir "01_ê°€ëž˜ ë“ëŠ” ì†Œë¦¬"
-mkdir "01_ìž… í‘¸ëŠ” ì†Œë¦¬"
-mkdir "03_í˜¸ë£¨ë¼ê¸° ì†Œë¦¬"
-mkdir "03_PC ì†Œë¦¬"
-mkdir "03_ë¹„ë‹ êµ¬ê¸°ëŠ” ì†Œë¦¬"
-mkdir "03_ìœ ë¦¬ ë¶€ë”ªížˆëŠ” ì†Œë¦¬"
+mkdir "02_»õ ¼Ò¸®"
+mkdir "01_¹Ú¼ö ¼Ò¸®"
+mkdir "01_¼¼¼ö ÇÏ´Â ¼Ò¸®"
+mkdir "01_µû±Í(Âû½Ï°Å¸®´Â)¼Ò¸®"
+mkdir "01_°¡·¡ ²ú´Â ¼Ò¸®"
+mkdir "01_ÀÔ Çª´Â ¼Ò¸®"
+mkdir "03_È£·ç¶ó±â ¼Ò¸®"
+mkdir "03_PC ¼Ò¸®"
+mkdir "03_ºñ´Ò ±¸±â´Â ¼Ò¸®"
+mkdir "03_À¯¸® ºÎµúÈ÷´Â ¼Ò¸®"
 
 goto quit
 
 
 :A8
 cls
-mkdir "02_ë™ë¬¼ ë¹—ì§ˆ ì†Œë¦¬"
-mkdir "03_í”Œë¼ìŠ¤í‹± êµ¬ê¸°ëŠ” ì†Œë¦¬"
-mkdir "03_ìŠ¤í…Œì´í”ŒëŸ¬ ì†Œë¦¬"
-mkdir "03_ì»¤í”¼í¬íŠ¸ ë“ëŠ” ì†Œë¦¬"
-mkdir "03_ìžë™ì°¨ ê²½ì  ì†Œë¦¬"
-mkdir "03_ì¹¼ì§ˆí•˜ëŠ” ì†Œë¦¬"
-mkdir "03_ë§ˆìš°ìŠ¤ í´ë¦­í•˜ëŠ” ì†Œë¦¬"
-mkdir "03_ì‹œê³„ ì†Œë¦¬"
-mkdir "03_ë“œë¼ì´ê¸° ì†Œë¦¬"
-mkdir "03_ì„¸íƒê¸° ì†Œë¦¬"
+mkdir "02_µ¿¹° ºøÁú ¼Ò¸®"
+mkdir "03_ÇÃ¶ó½ºÆ½ ±¸±â´Â ¼Ò¸®"
+mkdir "03_½ºÅ×ÀÌÇÃ·¯ ¼Ò¸®"
+mkdir "03_Ä¿ÇÇÆ÷Æ® ²ú´Â ¼Ò¸®"
+mkdir "03_ÀÚµ¿Â÷ °æÀû ¼Ò¸®"
+mkdir "03_Ä®ÁúÇÏ´Â ¼Ò¸®"
+mkdir "03_¸¶¿ì½º Å¬¸¯ÇÏ´Â ¼Ò¸®"
+mkdir "03_½Ã°è ¼Ò¸®"
+mkdir "03_µå¶óÀÌ±â ¼Ò¸®"
+mkdir "03_¼¼Å¹±â ¼Ò¸®"
 
 goto quit
 
 
 :A9
 cls
-mkdir "02_ì‚¬ë£Œ ë¨¹ëŠ” ì†Œë¦¬"
-mkdir "03_ë³‘ ë”°ëŠ” ì†Œë¦¬"
-mkdir "03_ë¹—ìžë£¨ì§ˆ ì†Œë¦¬"
-mkdir "03_ì „ê¸°ì±„ ì†Œë¦¬"
-mkdir "03_ë°¥ì†¥ ì†Œë¦¬"
-mkdir "03_ì‚¬í¬ì§ˆ ì†Œë¦¬"
-mkdir "03_ì€ë°•ì§€ ì†Œë¦¬"
-mkdir "03_íƒ„ì‚°ìŒë£Œ ë”°ë¥´ëŠ” ì†Œë¦¬"
-mkdir "03_ìºìŠ¤í„°ë„¤ì¸  ì†Œë¦¬"
-mkdir "03_ì˜¤í† ë°”ì´ ì‹œë™ ì†Œë¦¬"
+mkdir "02_»ç·á ¸Ô´Â ¼Ò¸®"
+mkdir "03_º´ µû´Â ¼Ò¸®"
+mkdir "03_ºøÀÚ·çÁú ¼Ò¸®"
+mkdir "03_Àü±âÃ¤ ¼Ò¸®"
+mkdir "03_¹ä¼Ü ¼Ò¸®"
+mkdir "03_»çÆ÷Áú ¼Ò¸®"
+mkdir "03_Àº¹ÚÁö ¼Ò¸®"
+mkdir "03_Åº»êÀ½·á µû¸£´Â ¼Ò¸®"
+mkdir "03_Ä³½ºÅÍ³×Ã÷ ¼Ò¸®"
+mkdir "03_¿ÀÅä¹ÙÀÌ ½Ãµ¿ ¼Ò¸®"
 echo.
 
 goto quit
@@ -260,742 +262,599 @@ goto quit
 
 :A10
 cls
-mkdir "03_íœ´ëŒ€ìš© ì†í’ê¸° ì†Œë¦¬"
-mkdir "03_ë½ì¹´ ì†Œë¦¬"
-mkdir "03_í†µì¡°ë¦¼ ë”°ëŠ” ì†Œë¦¬"
-mkdir "03_ë³´ê¸€ë³´ê¸€ ë“ëŠ” ì†Œë¦¬"
-mkdir "03_ìž¥ê¸°ì•Œ ì†Œë¦¬"
-mkdir "03_ë³´í’€ì œê±°ê¸° ì†Œë¦¬"
-mkdir "03_ì œëª¨ê¸° ì†Œë¦¬"
-mkdir "03_ì˜ìž(ì±…ìƒ)ì‚ê·¸ë• ì†Œë¦¬"
-mkdir "03_ë¿…ë§ì¹˜ ì†Œë¦¬"
-mkdir "03_ë˜‘ë”±ì´ ì†Œë¦¬"
+mkdir "03_ÈÞ´ë¿ë ¼ÕÇ³±â ¼Ò¸®"
+mkdir "03_¶ôÄ« ¼Ò¸®"
+mkdir "03_ÅëÁ¶¸² µû´Â ¼Ò¸®"
+mkdir "03_º¸±Ûº¸±Û ²ú´Â ¼Ò¸®"
+mkdir "03_Àå±â¾Ë ¼Ò¸®"
+mkdir "03_º¸Ç®Á¦°Å±â ¼Ò¸®"
+mkdir "03_Á¦¸ð±â ¼Ò¸®"
+mkdir "03_ÀÇÀÚ(Ã¥»ó)»ß±×´ö ¼Ò¸®"
+mkdir "03_»Ð¸ÁÄ¡ ¼Ò¸®"
+mkdir "03_¶ÈµüÀÌ ¼Ò¸®"
 
 goto quit
 
 
 :B1
 cls
-mkdir "02_ê³ ì–‘ì´ ì†Œë¦¬"
-mkdir "02_í’€ë²Œë ˆ ì†Œë¦¬"
-mkdir "02_ë²Œ ì†Œë¦¬"
-mkdir "02_ë§¤ë¯¸ ì†Œë¦¬"
-mkdir "02_ê¹Œì¹˜ ì†Œë¦¬"
-mkdir "02_ë‚˜ë­‡ìžŽ í”ë“¤ë¦¬ëŠ” ì†Œë¦¬"
-mkdir "01_ë¹„ëª… ì†Œë¦¬"
-mkdir "01_ê±·ëŠ” ì†Œë¦¬"
-mkdir "01_ë›°ëŠ” ì†Œë¦¬"
-mkdir "01_ê³µ ì¹˜ëŠ” ì†Œë¦¬"
+mkdir "02_°í¾çÀÌ ¼Ò¸®"
+mkdir "02_Ç®¹ú·¹ ¼Ò¸®"
+mkdir "02_¹ú ¼Ò¸®"
+mkdir "02_¸Å¹Ì ¼Ò¸®"
+mkdir "02_±îÄ¡ ¼Ò¸®"
+mkdir "02_³ª¹µÀÙ Èçµé¸®´Â ¼Ò¸®"
+mkdir "01_ºñ¸í ¼Ò¸®"
+mkdir "01_°È´Â ¼Ò¸®"
+mkdir "01_¶Ù´Â ¼Ò¸®"
+mkdir "01_°ø Ä¡´Â ¼Ò¸®"
 
 goto quit
 
 
 :B2
 cls
-mkdir "01_ì¤„ë„˜ê¸° í•˜ëŠ” ì†Œë¦¬"
-mkdir "01_ì‚´ ë¬¸ì§€ë¥´ëŠ” ì†Œë¦¬"
-mkdir "01_ë¬¼ê±°í’ˆ ë‚´ëŠ” ì†Œë¦¬"
-mkdir "01_ê´€ì ˆ êº¾ëŠ” ì†Œë¦¬"
-mkdir "01_ì°¸ì™¸ ë¨¹ëŠ” ì†Œë¦¬"
-mkdir "01_ë³µìˆ­ì•„ ë¨¹ëŠ” ì†Œë¦¬"
-mkdir "01_ê±´ì–´ë¬¼ ì”¹ëŠ” ì†Œë¦¬"
-mkdir "01_íŠ€ê¹€ ë¨¹ëŠ” ì†Œë¦¬"
-mkdir "01_ë¹„íŠ¸ë°•ìŠ¤ í•˜ëŠ” ì†Œë¦¬"
-mkdir "01_í˜€ íŠ•ê¸°ëŠ” ì†Œë¦¬"
+mkdir "01_ÁÙ³Ñ±â ÇÏ´Â ¼Ò¸®"
+mkdir "01_»ì ¹®Áö¸£´Â ¼Ò¸®"
+mkdir "01_¹°°ÅÇ° ³»´Â ¼Ò¸®"
+mkdir "01_°üÀý ²ª´Â ¼Ò¸®"
+mkdir "01_Âü¿Ü ¸Ô´Â ¼Ò¸®"
+mkdir "01_º¹¼þ¾Æ ¸Ô´Â ¼Ò¸®"
+mkdir "01_°Ç¾î¹° ¾Ã´Â ¼Ò¸®"
+mkdir "01_Æ¢±è ¸Ô´Â ¼Ò¸®"
+mkdir "01_ºñÆ®¹Ú½º ÇÏ´Â ¼Ò¸®"
+mkdir "01_Çô Æ¨±â´Â ¼Ò¸®"
 
 goto quit
 
 
 :B3
 cls
-mkdir "03_ì´ˆì¸ì¢… ì†Œë¦¬"
-mkdir "03_ì²œ ì°¢ì–´ì§€ëŠ” ì†Œë¦¬"
-mkdir "03_ì˜ìž(ì±…ìƒ)ë„ëŠ” ì†Œë¦¬"
-mkdir "03_ë¬¸ ì—¬ë‹«ëŠ” ì†Œë¦¬"
-mkdir "03_ë¶„ë¬´ê¸° ì†Œë¦¬"
-mkdir "03_ì „ìžë ˆì¸ì§€ ì†Œë¦¬"
-mkdir "03_ë¼ì´í„° ì†Œë¦¬"
-mkdir "03_ìº” ë”°ëŠ” ì†Œë¦¬"
-mkdir "03_ì§€í¼ ì†Œë¦¬"
-mkdir "03_ìŠ¤í‹°ë¡œí¼ ì†Œë¦¬"
+mkdir "03_ÃÊÀÎÁ¾ ¼Ò¸®"
+mkdir "03_Ãµ Âõ¾îÁö´Â ¼Ò¸®"
+mkdir "03_ÀÇÀÚ(Ã¥»ó)²ô´Â ¼Ò¸®"
+mkdir "03_¹® ¿©´Ý´Â ¼Ò¸®"
+mkdir "03_ºÐ¹«±â ¼Ò¸®"
+mkdir "03_ÀüÀÚ·¹ÀÎÁö ¼Ò¸®"
+mkdir "03_¶óÀÌÅÍ ¼Ò¸®"
+mkdir "03_Äµ µû´Â ¼Ò¸®"
+mkdir "03_ÁöÆÛ ¼Ò¸®"
+mkdir "03_½ºÆ¼·ÎÆû ¼Ò¸®"
 
 goto quit
 
 
 :B4
 cls
-mkdir "03_ì²œ ê¸ëŠ” ì†Œë¦¬"
-echo 10%...
-mkdir "03_ì¹´ë©”ë¼ ì†Œë¦¬"
-echo 20%...
-mkdir "03_íƒœì—½ ê°ëŠ” ì†Œë¦¬"
-echo 30%...
-mkdir "03_ì»¤íŠ¼ ì†Œë¦¬"
-echo 40%...
-mkdir "03_ë½ë½ì´ ì†Œë¦¬"
-echo 50%...
-mkdir "03_í™”íˆ¬ ì†Œë¦¬"
-echo 60%...
-mkdir "03_ë‹¤ë¦¬ë¯¸ ì†Œë¦¬"
-echo 70%...
-mkdir "03_ì „ë™ ë“œë¼ì´ë²„ ì†Œë¦¬"
-echo 80%...
-mkdir "03_ì¢…ì´ ë„˜ê¸°ëŠ” ì†Œë¦¬"
-echo 90%...
-mkdir "03_ë¬¼ ë‚´ë¦¬ëŠ” ì†Œë¦¬"
+mkdir "03_Ãµ ±Ü´Â ¼Ò¸®"
+echo 10^%...
+mkdir "03_Ä«¸Þ¶ó ¼Ò¸®"
+echo 20^%...
+mkdir "03_ÅÂ¿± °¨´Â ¼Ò¸®"
+echo 30^%...
+mkdir "03_Ä¿Æ° ¼Ò¸®"
+echo 40^%...
+mkdir "03_»È»ÈÀÌ ¼Ò¸®"
+echo 50^%...
+mkdir "03_È­Åõ ¼Ò¸®"
+echo 60^%...
+mkdir "03_´Ù¸®¹Ì ¼Ò¸®"
+echo 70^%...
+mkdir "03_Àüµ¿ µå¶óÀÌ¹ö ¼Ò¸®"
+echo 80^%...
+mkdir "03_Á¾ÀÌ ³Ñ±â´Â ¼Ò¸®"
+echo 90^%...
+mkdir "03_¹° ³»¸®´Â ¼Ò¸®"
 
 goto quit
 
 
 :B5
 cls
-mkdir "03_ë¬¼í†µ í”ë“œëŠ” ì†Œë¦¬"
-echo 10%...
-mkdir "03_íŠ¸ë¼ì´ì•µê¸€ ì†Œë¦¬"
-echo 20%...
-mkdir "03_ì—˜ë¦¬ë² ì´í„° ì†Œë¦¬"
-echo 30%...
-mkdir "03_êµ¬ìŠ¬ì¹˜ëŠ” ì†Œë¦¬"
-echo 40%...
-mkdir "03_ì¹ íŒ ê¸ëŠ” ì†Œë¦¬"
-echo 50%...
-mkdir "03_ìœ· ë˜ì§€ëŠ” ì†Œë¦¬"
-echo 60%...
-mkdir "03_ê±´ì¡°ê¸° ì†Œë¦¬"
-echo 70%...
-mkdir "03_ì§€ë¬¸ì¸ì‹ê¸° ì†Œë¦¬"
-echo 80%...
-mkdir "03_ìˆ˜íƒ€ì¹˜ëŠ” ì†Œë¦¬"
-echo 90%...
-mkdir "03_ì²  ë„ëŠ” ì†Œë¦¬"
+mkdir "03_¹°Åë Èçµå´Â ¼Ò¸®"
+echo 10^%...
+mkdir "03_Æ®¶óÀÌ¾Þ±Û ¼Ò¸®"
+echo 20^%...
+mkdir "03_¿¤¸®º£ÀÌÅÍ ¼Ò¸®"
+echo 30^%...
+mkdir "03_±¸½½Ä¡´Â ¼Ò¸®"
+echo 40^%...
+mkdir "03_Ä¥ÆÇ ±Ü´Â ¼Ò¸®"
+echo 50^%...
+mkdir "03_À· ´øÁö´Â ¼Ò¸®"
+echo 60^%...
+mkdir "03_°ÇÁ¶±â ¼Ò¸®"
+echo 70^%...
+mkdir "03_Áö¹®ÀÎ½Ä±â ¼Ò¸®"
+echo 80^%...
+mkdir "03_¼öÅ¸Ä¡´Â ¼Ò¸®"
+echo 90^%...
+mkdir "03_Ã¶ ²ô´Â ¼Ò¸®"
 
 goto quit
 
 
 :B6
 cls
-mkdir "02_ë‹­ ì†Œë¦¬"
-echo 10%...
-mkdir "02_ëŒ êµ¬ë¥´ëŠ” ì†Œë¦¬"
-echo 20%...
-mkdir "02_ë¬¼ ë–¨ì–´ì§€ëŠ” ì†Œë¦¬"
-echo 30%...
-mkdir "02_ì°¸ìƒˆ ì†Œë¦¬"
-echo 40%...
-mkdir "02_ê¹Œë§ˆê·€ ì†Œë¦¬"
-echo 50%...
-mkdir "01_í•˜í’ˆí•˜ëŠ” ì†Œë¦¬"
-echo 60%...
-mkdir "01_í˜¸ë¡œë¡ ê±°ë¦¬ëŠ” ì†Œë¦¬"
-echo 70%...
-mkdir "01_ë°ŸëŠ” ì†Œë¦¬"
-echo 80%...
-mkdir "01_í™˜í˜¸í•˜ëŠ” ì†Œë¦¬"
-echo 90%...
-mkdir "01_ì–‘ì¹˜í•˜ëŠ” ì†Œë¦¬"
+mkdir "02_´ß ¼Ò¸®"
+echo 10^%...
+mkdir "02_µ¹ ±¸¸£´Â ¼Ò¸®"
+echo 20^%...
+mkdir "02_¹° ¶³¾îÁö´Â ¼Ò¸®"
+echo 30^%...
+mkdir "02_Âü»õ ¼Ò¸®"
+echo 40^%...
+mkdir "02_±î¸¶±Í ¼Ò¸®"
+echo 50^%...
+mkdir "01_ÇÏÇ°ÇÏ´Â ¼Ò¸®"
+echo 60^%...
+mkdir "01_È£·Î·Ï °Å¸®´Â ¼Ò¸®"
+echo 70^%...
+mkdir "01_¹â´Â ¼Ò¸®"
+echo 80^%...
+mkdir "01_È¯È£ÇÏ´Â ¼Ò¸®"
+echo 90^%...
+mkdir "01_¾çÄ¡ÇÏ´Â ¼Ò¸®"
 
 goto quit
 
 
 :B7
 cls
-mkdir "01_ì†ë¹¨ëž˜ í•˜ëŠ” ì†Œë¦¬"
-echo 10%...
-mkdir "01_ì ¤ë¦¬ ë¨¹ëŠ” ì†Œë¦¬"
-echo 20%...
-mkdir "01_íŒì½˜ë¨¹ëŠ” ì†Œë¦¬"
-echo 30%...
-mkdir "01_ë°œì„±ì—°ìŠµ ì†Œë¦¬"
-echo 40%...
-mkdir "01_ì˜¥ìˆ˜ìˆ˜ ë¨¹ëŠ” ì†Œë¦¬"
-echo 50%...
-mkdir "01_ì¹˜ì•„ ë¶€ë”ªížˆëŠ” ì†Œë¦¬"
-echo 60%...
-mkdir "01_ê·¤ ë¨¹ëŠ” ì†Œë¦¬"
-echo 70%...
-mkdir "01_ì•¼ìœ í•˜ëŠ” ì†Œë¦¬"
-echo 80%...
-mkdir "01_ì‰¿ ì†Œë¦¬"
-echo 90%...
-mkdir "01_ë°°ì¶” ë¨¹ëŠ” ì†Œë¦¬"
+mkdir "01_¼Õ»¡·¡ ÇÏ´Â ¼Ò¸®"
+echo 10^%...
+mkdir "01_Á©¸® ¸Ô´Â ¼Ò¸®"
+echo 20^%...
+mkdir "01_ÆËÄÜ¸Ô´Â ¼Ò¸®"
+echo 30^%...
+mkdir "01_¹ß¼º¿¬½À ¼Ò¸®"
+echo 40^%...
+mkdir "01_¿Á¼ö¼ö ¸Ô´Â ¼Ò¸®"
+echo 50^%...
+mkdir "01_Ä¡¾Æ ºÎµúÈ÷´Â ¼Ò¸®"
+echo 60^%...
+mkdir "01_±Ö ¸Ô´Â ¼Ò¸®"
+echo 70^%...
+mkdir "01_¾ßÀ¯ÇÏ´Â ¼Ò¸®"
+echo 80^%...
+mkdir "01_½² ¼Ò¸®"
+echo 90^%...
+mkdir "01_¹èÃß ¸Ô´Â ¼Ò¸®"
 
 goto quit
 
 
 :B8
 cls
-mkdir "03_ëŒ ë¶€ë”ªížˆëŠ” ì†Œë¦¬"
-echo 10%...
-mkdir "03_í”Œë¼ìŠ¤í‹± ë¶€ë”ªížˆëŠ” ì†Œë¦¬"
-echo 20%...
-mkdir "03_ì—ì–´í”„ë¼ì´ì–´ ì†Œë¦¬"
-echo 30%...
-mkdir "03_ë°”í€´ êµ´ëŸ¬ê°€ëŠ” ì†Œë¦¬"
-echo 40%...
-mkdir "03_ìž¥ë‚œê° ì†Œë¦¬"
-echo 50%...
-mkdir "03_ì¹¼ ê°€ëŠ” ì†Œë¦¬"
-echo 60%...
-mkdir "03_ë™ì „ ë–¨ì–´ì§€ëŠ” ì†Œë¦¬"
-echo 70%...
-mkdir "03_ë¹¨ëŒ€ ì†Œë¦¬"
-echo 80%...
-mkdir "03_ì»¤í”¼ë¨¸ì‹  ì†Œë¦¬"
-echo 90%...
-mkdir "03_í’ì„  ì†Œë¦¬"
+mkdir "03_µ¹ ºÎµúÈ÷´Â ¼Ò¸®"
+echo 10^%...
+mkdir "03_ÇÃ¶ó½ºÆ½ ºÎµúÈ÷´Â ¼Ò¸®"
+echo 20^%...
+mkdir "03_¿¡¾îÇÁ¶óÀÌ¾î ¼Ò¸®"
+echo 30^%...
+mkdir "03_¹ÙÄû ±¼·¯°¡´Â ¼Ò¸®"
+echo 40^%...
+mkdir "03_Àå³­°¨ ¼Ò¸®"
+echo 50^%...
+mkdir "03_Ä® °¡´Â ¼Ò¸®"
+echo 60^%...
+mkdir "03_µ¿Àü ¶³¾îÁö´Â ¼Ò¸®"
+echo 70^%...
+mkdir "03_»¡´ë ¼Ò¸®"
+echo 80^%...
+mkdir "03_Ä¿ÇÇ¸Ó½Å ¼Ò¸®"
+echo 90^%...
+mkdir "03_Ç³¼± ¼Ò¸®"
 
 goto quit
 
 
 :B9
 cls
-mkdir "03_í”„ë¦°í„° ì†Œë¦¬"
-echo 10%...
-mkdir "03_ìžì„ ë¶€ë”ªížˆëŠ” ì†Œë¦¬"
-echo 20%...
-mkdir "03_ê³„ëž€ ì†Œë¦¬"
-echo 30%...
-mkdir "03_ë°”ë‘‘ì•Œ ì†Œë¦¬"
-echo 40%...
-mkdir "03_ê°•íŒ ê°€ëŠ” ì†Œë¦¬"
-echo 50%...
-mkdir "03_ê³µê¸°ì²­ì •ê¸° ì†Œë¦¬"
-echo 60%...
-mkdir "03_ê¸ˆê³  ì†Œë¦¬"
-echo 70%...
-mkdir "03_ì†”ì§ˆ ì†Œë¦¬"
-echo 80%...
-mkdir "03_ìžë™ë¬¸ ì†Œë¦¬"
-echo 90%...
-mkdir "03_ê³µêµ¬í•¨ ì†Œë¦¬"
+mkdir "03_ÇÁ¸°ÅÍ ¼Ò¸®"
+echo 10^%...
+mkdir "03_ÀÚ¼® ºÎµúÈ÷´Â ¼Ò¸®"
+echo 20^%...
+mkdir "03_°è¶õ ¼Ò¸®"
+echo 30^%...
+mkdir "03_¹ÙµÏ¾Ë ¼Ò¸®"
+echo 40^%...
+mkdir "03_°­ÆÇ °¡´Â ¼Ò¸®"
+echo 50^%...
+mkdir "03_°ø±âÃ»Á¤±â ¼Ò¸®"
+echo 60^%...
+mkdir "03_±Ý°í ¼Ò¸®"
+echo 70^%...
+mkdir "03_¼ÖÁú ¼Ò¸®"
+echo 80^%...
+mkdir "03_ÀÚµ¿¹® ¼Ò¸®"
+echo 90^%...
+mkdir "03_°ø±¸ÇÔ ¼Ò¸®"
 
 goto quit
 
 
 :B10
 cls
-mkdir "03_íƒ¬ë²„ë¦° ì†Œë¦¬"
-echo 10%...
-mkdir "03_ì‹¤ë¡œí° ì†Œë¦¬"
-echo 20%...
-mkdir "03_ë‚˜ë¬´ ê¹ŽëŠ” ì†Œë¦¬"
-echo 30%...
-mkdir "03_ë”±ì§€ì¹˜ëŠ” ì†Œë¦¬"
-echo 40%...
-mkdir "03_ê°€ìŠµê¸° ì†Œë¦¬"
-echo 50%...
-mkdir "03_í† ìŠ¤íŠ¸ê¸° ì†Œë¦¬"
-echo 60%...
-mkdir "03_ë»¥íŠ€ê¸° ê¸°ê³„ ì†Œë¦¬"
-echo 70%...
-mkdir "03_ìƒ´íŽ˜ì¸ ë”°ëŠ” ì†Œë¦¬"
-echo 80%...
-mkdir "03_í‚¤ì§ˆí•˜ëŠ” ì†Œë¦¬"
-echo 90%...
-mkdir "03_ë‹¹êµ¬ê³µ ì†Œë¦¬"
+mkdir "03_ÅÆ¹ö¸° ¼Ò¸®"
+echo 10^%...
+mkdir "03_½Ç·ÎÆù ¼Ò¸®"
+echo 20^%...
+mkdir "03_³ª¹« ±ð´Â ¼Ò¸®"
+echo 30^%...
+mkdir "03_µüÁöÄ¡´Â ¼Ò¸®"
+echo 40^%...
+mkdir "03_°¡½À±â ¼Ò¸®"
+echo 50^%...
+mkdir "03_Åä½ºÆ®±â ¼Ò¸®"
+echo 60^%...
+mkdir "03_»½Æ¢±â ±â°è ¼Ò¸®"
+echo 70^%...
+mkdir "03_¼¤ÆäÀÎ µû´Â ¼Ò¸®"
+echo 80^%...
+mkdir "03_Å°ÁúÇÏ´Â ¼Ò¸®"
+echo 90^%...
+mkdir "03_´ç±¸°ø ¼Ò¸®"
 
 goto quit
 
-rem ## Cê·¸ë£¹ ##
+rem ## C±×·ì ##
 
 :C1
 cls
-mkdir "02_ë¬¼ íë¥´ëŠ” ì†Œë¦¬"
-echo 10%...
-mkdir "02_ì†Œ ì†Œë¦¬"
-echo 20%...
-mkdir "02_ì˜¤ë¦¬ ì†Œë¦¬"
-echo 30%...
-mkdir "01_íŠ¸ë¦¼ ì†Œë¦¬"
-echo 40%...
-mkdir "01_í—›ê¸°ì¹¨í•˜ëŠ” ì†Œë¦¬"
-echo 50%...
-mkdir "01_ìš¸ìŒ ì†Œë¦¬"
-echo 60%...
-mkdir "01_ê¸ëŠ” ì†Œë¦¬"
-echo 70%...
-mkdir "01_ì´ ê°€ëŠ” ì†Œë¦¬"
-echo 80%...
-mkdir "01_ì˜¹ì•Œì´ í•˜ëŠ” ì†Œë¦¬"
-echo 90%...
-mkdir "03_ì•„ì¹´íŽ ë¼ ì†Œë¦¬"
+mkdir "02_¹° Èå¸£´Â ¼Ò¸®"
+echo 10^%...
+mkdir "02_¼Ò ¼Ò¸®"
+echo 20^%...
+mkdir "02_¿À¸® ¼Ò¸®"
+echo 30^%...
+mkdir "01_Æ®¸² ¼Ò¸®"
+echo 40^%...
+mkdir "01_Çê±âÄ§ÇÏ´Â ¼Ò¸®"
+echo 50^%...
+mkdir "01_¿ïÀ½ ¼Ò¸®"
+echo 60^%...
+mkdir "01_±Ü´Â ¼Ò¸®"
+echo 70^%...
+mkdir "01_ÀÌ °¡´Â ¼Ò¸®"
+echo 80^%...
+mkdir "01_¿Ë¾ËÀÌ ÇÏ´Â ¼Ò¸®"
+echo 90^%...
+mkdir "03_¾ÆÄ«Æç¶ó ¼Ò¸®"
 
 goto quit
 
 
 :C2
 cls
-mkdir "01_ì†ê°€ë½ íŠ•ê¸°ëŠ” ì†Œë¦¬"
-echo 10%...
-mkdir "01_ë”¸ê¾¹ì§ˆ ì†Œë¦¬"
-echo 20%...
-mkdir "01_ê¼¬ë¡œë¡ ê±°ë¦¬ëŠ” ì†Œë¦¬"
-echo 30%...
-mkdir "01_ìš”ë“¤ ì†Œë¦¬"
-echo 40%...
-mkdir "03_ìœ ë¦¬ ê¹¨ì§€ëŠ” ì†Œë¦¬"
-echo 50%...
-mkdir "03_ì„¸ë‹¨ê¸° ì†Œë¦¬"
-echo 60%...
-mkdir "03_ë‹¤ë“¬ì´ì§ˆ ì†Œë¦¬"
-echo 70%...
-mkdir "03_í† ì¹˜ ì†Œë¦¬"
-echo 80%...
-mkdir "03_ë¼ë””ì˜¤ ì§€ì§€ì§ ì†Œë¦¬"
-echo 90%...
-mkdir "03_ëª©íƒ ì†Œë¦¬"
+mkdir "01_¼Õ°¡¶ô Æ¨±â´Â ¼Ò¸®"
+echo 10^%...
+mkdir "01_µþ²ÚÁú ¼Ò¸®"
+echo 20^%...
+mkdir "01_²¿·Î·Ï °Å¸®´Â ¼Ò¸®"
+echo 30^%...
+mkdir "01_¿äµé ¼Ò¸®"
+echo 40^%...
+mkdir "03_À¯¸® ±úÁö´Â ¼Ò¸®"
+echo 50^%...
+mkdir "03_¼¼´Ü±â ¼Ò¸®"
+echo 60^%...
+mkdir "03_´ÙµëÀÌÁú ¼Ò¸®"
+echo 70^%...
+mkdir "03_ÅäÄ¡ ¼Ò¸®"
+echo 80^%...
+mkdir "03_¶óµð¿À ÁöÁöÁ÷ ¼Ò¸®"
+echo 90^%...
+mkdir "03_¸ñÅ¹ ¼Ò¸®"
 
 goto quit
 
 
 :C3
 cls
-mkdir "03_ë§ì¹˜ ì†Œë¦¬"
-echo 10%...
-mkdir "03_í†±ë¥˜"
-echo 20%...
-mkdir "03_íŠ€ê¸°ëŠ” ì†Œë¦¬"
-echo 30%...
-mkdir "03_ê³„ëŸ‰ê¸° ì†Œë¦¬"
-echo 40%...
-mkdir "03_ìŠ¤ìœ„ì¹˜ ì†Œë¦¬"
-echo 50%...
-mkdir "03_ê¸°íƒ€ íŠœë‹ ì†Œë¦¬"
-echo 60%...
-mkdir "03_ë°”ì´ì˜¬ë¦° íŠœë‹ ì†Œë¦¬"
-echo 70%...
-mkdir "03_ê°€ì•¼ê¸ˆ íŠœë‹ ì†Œë¦¬"
-echo 80%...
-mkdir "03_ìš°ì¿ ë ë ˆ íŠœë‹ ì†Œë¦¬"
-echo 90%...
-mkdir "03_ìƒ‰ì†Œí° íŠœë‹ ì†Œë¦¬"
+mkdir "03_¸ÁÄ¡ ¼Ò¸®"
+echo 10^%...
+mkdir "03_Åé·ù"
+echo 20^%...
+mkdir "03_Æ¢±â´Â ¼Ò¸®"
+echo 30^%...
+mkdir "03_°è·®±â ¼Ò¸®"
+echo 40^%...
+mkdir "03_½ºÀ§Ä¡ ¼Ò¸®"
+echo 50^%...
+mkdir "03_±âÅ¸ Æ©´× ¼Ò¸®"
+echo 60^%...
+mkdir "03_¹ÙÀÌ¿Ã¸° Æ©´× ¼Ò¸®"
+echo 70^%...
+mkdir "03_°¡¾ß±Ý Æ©´× ¼Ò¸®"
+echo 80^%...
+mkdir "03_¿ìÄí·¼·¹ Æ©´× ¼Ò¸®"
+echo 90^%...
+mkdir "03_»ö¼ÒÆù Æ©´× ¼Ò¸®"
 
 goto quit
 
 
 :C4
 cls
-mkdir "03_ë¶ˆ íƒ€ëŠ” ì†Œë¦¬"
-echo 10%...
-mkdir "03_ë©´ë„í•˜ëŠ” ì†Œë¦¬"
-echo 20%...
-mkdir "03_ì¡°ì´ìŠ¤í‹± ì†Œë¦¬"
-echo 30%...
-mkdir "03_ì§• íŠœë‹ ì†Œë¦¬"
-echo 40%...
-mkdir "03_íŠ¸ëž™í„° ì‹œë™ ì†Œë¦¬"
-echo 50%...
-mkdir "03_ì´ì•™ê¸° ì‹œë™ ì†Œë¦¬"
-echo 60%...
-mkdir "03_ê³¼ì¼ë‚˜ë¬´ í„°ëŠ” ì†Œë¦¬"
-echo 70%...
-mkdir "03_ì¹«ì†”ì‚´ê· ê¸° ì†Œë¦¬"
-echo 80%...
-mkdir "03_ì°©ì¦™ê¸° ì†Œë¦¬"
-echo 90%...
-mkdir "03_ë°˜ì£½ê¸° ì†Œë¦¬"
+mkdir "03_ºÒ Å¸´Â ¼Ò¸®"
+echo 10^%...
+mkdir "03_¸éµµÇÏ´Â ¼Ò¸®"
+echo 20^%...
+mkdir "03_Á¶ÀÌ½ºÆ½ ¼Ò¸®"
+echo 30^%...
+mkdir "03_Â¡ Æ©´× ¼Ò¸®"
+echo 40^%...
+mkdir "03_Æ®·¢ÅÍ ½Ãµ¿ ¼Ò¸®"
+echo 50^%...
+mkdir "03_ÀÌ¾Ó±â ½Ãµ¿ ¼Ò¸®"
+echo 60^%...
+mkdir "03_°úÀÏ³ª¹« ÅÍ´Â ¼Ò¸®"
+echo 70^%...
+mkdir "03_Ä©¼Ö»ì±Õ±â ¼Ò¸®"
+echo 80^%...
+mkdir "03_ÂøÁó±â ¼Ò¸®"
+echo 90^%...
+mkdir "03_¹ÝÁ×±â ¼Ò¸®"
 
 goto quit
 
 
 :C5
 cls
-mkdir "03_íŽ„ëŸ­ì´ëŠ” ì†Œë¦¬"
-echo 10%...
-mkdir "03_ë¸”ë¼ì¸ë“œ ì†Œë¦¬"
-echo 20%...
-mkdir "03_ê¸‰ì •ê±°(ê¸‰ì¶œë°œ) í•˜ëŠ” ì†Œë¦¬"
-echo 30%...
-mkdir "03_ë¶€ì±„ ì†Œë¦¬"
-echo 40%...
-mkdir "03_êµ¬ê°•ì„¸ì •ê¸° ì†Œë¦¬"
-echo 50%...
-mkdir "03_í˜¸ë¯¸ì§ˆ í•˜ëŠ” ì†Œë¦¬"
-echo 60%...
-mkdir "03_ì œë¹™ê¸° ì†Œë¦¬"
-echo 70%...
-mkdir "03_ì œë©´ê¸° ì†Œë¦¬"
-echo 80%...
-mkdir "03_ë¬´ì „ê¸° ì†Œë¦¬"
-echo 90%...
-mkdir "03_ì£¼ìœ í•˜ëŠ” ì†Œë¦¬"
+mkdir "03_ÆÞ·°ÀÌ´Â ¼Ò¸®"
+echo 10^%...
+mkdir "03_ºí¶óÀÎµå ¼Ò¸®"
+echo 20^%...
+mkdir "03_±ÞÁ¤°Å(±ÞÃâ¹ß) ÇÏ´Â ¼Ò¸®"
+echo 30^%...
+mkdir "03_ºÎÃ¤ ¼Ò¸®"
+echo 40^%...
+mkdir "03_±¸°­¼¼Á¤±â ¼Ò¸®"
+echo 50^%...
+mkdir "03_È£¹ÌÁú ÇÏ´Â ¼Ò¸®"
+echo 60^%...
+mkdir "03_Á¦ºù±â ¼Ò¸®"
+echo 70^%...
+mkdir "03_Á¦¸é±â ¼Ò¸®"
+echo 80^%...
+mkdir "03_¹«Àü±â ¼Ò¸®"
+echo 90^%...
+mkdir "03_ÁÖÀ¯ÇÏ´Â ¼Ò¸®"
 
 goto quit
 
 
 :C6
 cls
-mkdir "02_ë¼ì§€ ì†Œë¦¬"
-echo 10%...
-mkdir "02_ë§ ì†Œë¦¬"
-echo 20%...
-mkdir "02_ì–‘ ì†Œë¦¬"
-echo 30%...
-mkdir "01_í•œìˆ¨ì‰¬ëŠ” ì†Œë¦¬"
-echo 40%...
-mkdir "01_í—ë–¡ì´ëŠ” ì†Œë¦¬"
-echo 50%...
-mkdir "01_ì›…ì„±ê±°ë¦¬ëŠ” ì†Œë¦¬"
-echo 60%...
-mkdir "01_í—› êµ¬ì—­ì§ˆ í•˜ëŠ” ì†Œë¦¬"
-echo 70%...
-mkdir "01_ê¸°ì§€ê°œ ì¼œëŠ” ì†Œë¦¬"
-echo 80%...
-mkdir "01_ì½§ë…¸ëž˜ ì†Œë¦¬"
-echo 90%...
-mkdir "03_ì¹´ë“œ ë‹¨ë§ê¸° ì†Œë¦¬"
+mkdir "02_µÅÁö ¼Ò¸®"
+echo 10^%...
+mkdir "02_¸» ¼Ò¸®"
+echo 20^%...
+mkdir "02_¾ç ¼Ò¸®"
+echo 30^%...
+mkdir "01_ÇÑ¼û½¬´Â ¼Ò¸®"
+echo 40^%...
+mkdir "01_Çæ¶±ÀÌ´Â ¼Ò¸®"
+echo 50^%...
+mkdir "01_¿õ¼º°Å¸®´Â ¼Ò¸®"
+echo 60^%...
+mkdir "01_Çê ±¸¿ªÁú ÇÏ´Â ¼Ò¸®"
+echo 70^%...
+mkdir "01_±âÁö°³ ÄÑ´Â ¼Ò¸®"
+echo 80^%...
+mkdir "01_Äà³ë·¡ ¼Ò¸®"
+echo 90^%...
+mkdir "03_Ä«µå ´Ü¸»±â ¼Ò¸®"
 
 goto quit
 
 
 :C7
 cls
-mkdir "01_íœ˜íŒŒëžŒ ì†Œë¦¬"
-echo 10%...
-mkdir "01_ìž¬ì±„ê¸° í•˜ëŠ” ì†Œë¦¬"
-echo 20%...
-mkdir "01_ì†ë°©ê·€ ì†Œë¦¬"
-echo 30%...
-mkdir "03_ìžë™ì°¨ ê²½ë³´ìŒ"
-echo 40%...
-mkdir "03_ë°©ì•—ê°„ ê¸°ê³„"
-echo 50%...
-mkdir "03_ê³„ìˆ˜ê¸° ì†Œë¦¬"
-echo 60%...
-mkdir "03_íœ˜ì “ëŠ” ì†Œë¦¬"
-echo 70%...
-mkdir "03_ì²´ì¸ ëŒì•„ê°€ëŠ” ì†Œë¦¬"
-echo 80%...
-mkdir "03_êµ½ëŠ” ì†Œë¦¬"
-echo 90%...
-mkdir "03_í’ê²½ ì†Œë¦¬"
+mkdir "01_ÈÖÆÄ¶÷ ¼Ò¸®"
+echo 10^%...
+mkdir "01_ÀçÃ¤±â ÇÏ´Â ¼Ò¸®"
+echo 20^%...
+mkdir "01_¼Õ¹æ±Í ¼Ò¸®"
+echo 30^%...
+mkdir "03_ÀÚµ¿Â÷ °æº¸À½"
+echo 40^%...
+mkdir "03_¹æ¾Ñ°£ ±â°è"
+echo 50^%...
+mkdir "03_°è¼ö±â ¼Ò¸®"
+echo 60^%...
+mkdir "03_ÈÖÁ£´Â ¼Ò¸®"
+echo 70^%...
+mkdir "03_Ã¼ÀÎ µ¹¾Æ°¡´Â ¼Ò¸®"
+echo 80^%...
+mkdir "03_±Á´Â ¼Ò¸®"
+echo 90^%...
+mkdir "03_Ç³°æ ¼Ò¸®"
 
 goto quit
 
 
 :C8
 cls
-mkdir "03_ì‚½ë¥˜"
-echo 10%...
-mkdir "03_íŽ€ì¹˜ë¥˜"
-echo 20%...
-mkdir "03_ë³¶ëŠ” ì†Œë¦¬"
-echo 30%...
-mkdir "03_ë°”ë¦¬ê¹¡ ì†Œë¦¬"
-echo 40%...
-mkdir "03_ì‹ê¸°ì„¸ì²™ê¸° ì†Œë¦¬"
-echo 50%...
-mkdir "03_ë“œëŸ¼ ì†Œë¦¬"
-echo 60%...
-mkdir "03_í”¼ì•„ë…¸ íŠœë‹ ì†Œë¦¬"
-echo 70%...
-mkdir "03_ê±°ë¬¸ê³  íŠœë‹ ì†Œë¦¬"
-echo 80%...
-mkdir "03_ë‹¨ì†Œ íŠœë‹ ì†Œë¦¬"
-echo 90%...
-mkdir "03_ìž¥êµ¬ íŠœë‹ ì†Œë¦¬"
+mkdir "03_»ð·ù"
+echo 10^%...
+mkdir "03_ÆÝÄ¡·ù"
+echo 20^%...
+mkdir "03_ºº´Â ¼Ò¸®"
+echo 30^%...
+mkdir "03_¹Ù¸®±ø ¼Ò¸®"
+echo 40^%...
+mkdir "03_½Ä±â¼¼Ã´±â ¼Ò¸®"
+echo 50^%...
+mkdir "03_µå·³ ¼Ò¸®"
+echo 60^%...
+mkdir "03_ÇÇ¾Æ³ë Æ©´× ¼Ò¸®"
+echo 70^%...
+mkdir "03_°Å¹®°í Æ©´× ¼Ò¸®"
+echo 80^%...
+mkdir "03_´Ü¼Ò Æ©´× ¼Ò¸®"
+echo 90^%...
+mkdir "03_Àå±¸ Æ©´× ¼Ò¸®"
 
 goto quit
 
 
 :C9
 cls
-mkdir "0_ë¿Œë¦¬ëŠ” ì†Œë¦¬"
-echo 10%...
-mkdir "0_ìž¬ë´‰í‹€ ì†Œë¦¬"
-echo 20%...
-mkdir "0_ê½¹ê³¼ë¦¬ íŠœë‹ ì†Œë¦¬"
-echo 30%...
-mkdir "0_ê²½ìš´ê¸° ì‹œë™ ì†Œë¦¬"
-echo 40%...
-mkdir "0_ì½¤ë°”ì¸ ì‹œë™ ì†Œë¦¬"
-echo 50%...
-mkdir "0_íƒˆê³¡ê¸° ì‹œë™ ì†Œë¦¬"
-echo 60%...
-mkdir "0_ë¶ ì†Œë¦¬"
-echo 70%...
-mkdir "0_í¬ìž¥ê¸° ì†Œë¦¬"
-echo 80%...
-mkdir "0_íŒ¬ížˆí„° ì†Œë¦¬"
-echo 90%...
-mkdir "0_ë½‘ê¸° ê¸°ê³„ ì†Œë¦¬"
+mkdir "0_»Ñ¸®´Â ¼Ò¸®"
+echo 10^%...
+mkdir "0_ÀçºÀÆ² ¼Ò¸®"
+echo 20^%...
+mkdir "0_²Ñ°ú¸® Æ©´× ¼Ò¸®"
+echo 30^%...
+mkdir "0_°æ¿î±â ½Ãµ¿ ¼Ò¸®"
+echo 40^%...
+mkdir "0_ÄÞ¹ÙÀÎ ½Ãµ¿ ¼Ò¸®"
+echo 50^%...
+mkdir "0_Å»°î±â ½Ãµ¿ ¼Ò¸®"
+echo 60^%...
+mkdir "0_ºÏ ¼Ò¸®"
+echo 70^%...
+mkdir "0_Æ÷Àå±â ¼Ò¸®"
+echo 80^%...
+mkdir "0_ÆÒÈ÷ÅÍ ¼Ò¸®"
+echo 90^%...
+mkdir "0_»Ì±â ±â°è ¼Ò¸®"
 
 goto quit
 
 
 :C10
 cls
-mkdir "03_ì•ˆë§ˆê¸° ì†Œë¦¬"
-echo 10%...
-mkdir "03_ì²¼ë¡œ ì†Œë¦¬"
-echo 20%...
-mkdir "03_ë§·ëŒ ì†Œë¦¬"
-echo 30%...
-mkdir "03_íë¸Œ ë§Œì§€ëŠ” ì†Œë¦¬"
-echo 40%...
-mkdir "03_ë‚«ì§ˆ í•˜ëŠ” ì†Œë¦¬"
-echo 50%...
-mkdir "03_ì˜¤ë¥´ê³¨ ì†Œë¦¬"
-echo 60%...
-mkdir "03_ë™ì „ë¶„ë¥˜ê¸° ì†Œë¦¬"
-echo 70%...
-mkdir "03_ë„ë¦¬ê¹¨ì§ˆ ì†Œë¦¬"
-echo 80%...
-mkdir "03_ì¿¨ëŸ¬ê±°ì¹˜ëŒ€ ì†Œë¦¬"
-echo 90%...
-mkdir "03_ìƒŒë“œë°± íƒ€ê²© ì†Œë¦¬"
+mkdir "03_¾È¸¶±â ¼Ò¸®"
+echo 10^%...
+mkdir "03_Ã¿·Î ¼Ò¸®"
+echo 20^%...
+mkdir "03_¸Ëµ¹ ¼Ò¸®"
+echo 30^%...
+mkdir "03_Å¥ºê ¸¸Áö´Â ¼Ò¸®"
+echo 40^%...
+mkdir "03_³´Áú ÇÏ´Â ¼Ò¸®"
+echo 50^%...
+mkdir "03_¿À¸£°ñ ¼Ò¸®"
+echo 60^%...
+mkdir "03_µ¿ÀüºÐ·ù±â ¼Ò¸®"
+echo 70^%...
+mkdir "03_µµ¸®±úÁú ¼Ò¸®"
+echo 80^%...
+mkdir "03_Äð·¯°ÅÄ¡´ë ¼Ò¸®"
+echo 90^%...
+mkdir "03_»÷µå¹é Å¸°Ý ¼Ò¸®"
 
 goto quit
 
-rem ## Dê·¸ë£¹ ë ##
+rem ## D±×·ì ³¡ ##
 
 :D1
 cls
-mkdir "0_íŒŒë„ ì†Œë¦¬"
-echo 20%...
-mkdir "0_ëª¨ë‹¥ë¶ˆ ì†Œë¦¬"
-echo 40%...
-mkdir "0_ê¼¬ë¥´ë¥µ ì†Œë¦¬"
-echo 60%...
-mkdir "0_ì –ë³‘ ë¹ ëŠ” ì†Œë¦¬"
-echo 80%...
-mkdir "0_í•™êµ ì•ŒëžŒì†Œë¦¬"
-
+mkdir "02_ÆÄµµ ¼Ò¸®"
+echo 20^%...
+mkdir "02_¸ð´ÚºÒ ¼Ò¸®"
+echo 40^%...
+mkdir "01_²¿¸£¸¤ ¼Ò¸®"
+echo 60^%...
+mkdir "01_Á¥º´ ºü´Â ¼Ò¸®"
+echo 80^%...
+mkdir "03_ÇÐ±³ ¾Ë¶÷¼Ò¸®"
 
 goto quit
 
 
-:D
+:D2
 cls
-mkdir "0_"
-echo 10%...
-mkdir "0_"
-echo 20%...
-mkdir "0_"
-echo 30%...
-mkdir "0_"
-echo 40%...
-mkdir "0_"
-echo 50%...
-mkdir "0_"
-echo 60%...
-mkdir "0_"
-echo 70%...
-mkdir "0_"
-echo 80%...
-mkdir "0_"
-echo 90%...
-mkdir "0_"
+mkdir "01_Àá²¿´ë ÇÏ´Â ¼Ò¸®"
+echo 20^%...
+mkdir "03_È­Àç°æº¸"
+echo 40^%...
+mkdir "03_ºñ»ó°æº¸"
+echo 60^%...
+mkdir "03_ÁøÀÚ¿îµ¿ ¸ðºô ¼Ò¸®"
+echo 80^%...
+mkdir "03_¾È°æ¼¼Ã´±â ¼Ò¸®"
 
 goto quit
 
 
-:D
+:D3
 cls
-mkdir "0_"
-echo 10%...
-mkdir "0_"
-echo 20%...
-mkdir "0_"
-echo 30%...
-mkdir "0_"
-echo 40%...
-mkdir "0_"
-echo 50%...
-mkdir "0_"
-echo 60%...
-mkdir "0_"
-echo 70%...
-mkdir "0_"
-echo 80%...
-mkdir "0_"
-echo 90%...
-mkdir "0_"
+mkdir "01_ÄÚ °í´Â ¼Ò¸®"
+echo 1/6...
+mkdir "03_Á¾¼Ò¸®"
+echo 2/6...
+mkdir "03_°¡½º´©Ãâ °æº¸¼Ò¸®"
+echo 3/6...
+mkdir "03_³ª¹« °¥¶óÁö´Â ¼Ò¸®"
+echo 4/6...
+mkdir "03_Àü±â ¼Ò¸®"
+echo 5/6...
+mkdir "03_½ºÆÄÅ© Æ¢´Â ¼Ò¸®"
+echo 6/6...
 
 goto quit
 
 
-:D
+:D4
 cls
-mkdir "0_"
-echo 10%...
-mkdir "0_"
-echo 20%...
-mkdir "0_"
-echo 30%...
-mkdir "0_"
-echo 40%...
-mkdir "0_"
-echo 50%...
-mkdir "0_"
-echo 60%...
-mkdir "0_"
-echo 70%...
-mkdir "0_"
-echo 80%...
-mkdir "0_"
-echo 90%...
-mkdir "0_"
+mkdir "03_ÁÙ °¡´Â ¼Ò¸®"
+echo 1/5...
+mkdir "03_½ºÇÁ¸µÄð·¯ ¼Ò¸®"
+echo 2/5...
+mkdir "03_¿Àºì ¼Ò¸®"
+echo 3/5...
+mkdir "03_¸ÞÆ®·Î³ð ¼Ò¸®"
+echo 4/5...
+mkdir "03_´«½çÁ¤¸®±â ¼Ò¸®"
+echo 5/5...
 
 goto quit
 
 
-:D
+:D5
 cls
-mkdir "0_"
-echo 10%...
-mkdir "0_"
-echo 20%...
-mkdir "0_"
-echo 30%...
-mkdir "0_"
-echo 40%...
-mkdir "0_"
-echo 50%...
-mkdir "0_"
-echo 60%...
-mkdir "0_"
-echo 70%...
-mkdir "0_"
-echo 80%...
-mkdir "0_"
-echo 90%...
-mkdir "0_"
+mkdir "03_ÀÀ±Þ°æº¸"
+echo 1/5...
+mkdir "03_µµ³­°æº¸"
+echo 2/5...
+mkdir "03_¹æ¿ªÇÏ´Â ¼Ò¸®"
+echo 3/5...
+mkdir "03_Å»¼ö±â ¼Ò¸®"
+echo 4/5...
+mkdir "03_¶±¸ÅÄ¡´Â ¼Ò¸®"
+echo 5/5...
 
 goto quit
-
-
-:D
-cls
-mkdir "0_"
-echo 10%...
-mkdir "0_"
-echo 20%...
-mkdir "0_"
-echo 30%...
-mkdir "0_"
-echo 40%...
-mkdir "0_"
-echo 50%...
-mkdir "0_"
-echo 60%...
-mkdir "0_"
-echo 70%...
-mkdir "0_"
-echo 80%...
-mkdir "0_"
-echo 90%...
-mkdir "0_"
-
-goto quit
-
-
-:D
-cls
-mkdir "0_"
-echo 10%...
-mkdir "0_"
-echo 20%...
-mkdir "0_"
-echo 30%...
-mkdir "0_"
-echo 40%...
-mkdir "0_"
-echo 50%...
-mkdir "0_"
-echo 60%...
-mkdir "0_"
-echo 70%...
-mkdir "0_"
-echo 80%...
-mkdir "0_"
-echo 90%...
-mkdir "0_"
-
-goto quit
-
-
-:D
-cls
-mkdir "0_"
-echo 10%...
-mkdir "0_"
-echo 20%...
-mkdir "0_"
-echo 30%...
-mkdir "0_"
-echo 40%...
-mkdir "0_"
-echo 50%...
-mkdir "0_"
-echo 60%...
-mkdir "0_"
-echo 70%...
-mkdir "0_"
-echo 80%...
-mkdir "0_"
-echo 90%...
-mkdir "0_"
-
-goto quit
-
-
-:D
-cls
-mkdir "0_"
-echo 10%...
-mkdir "0_"
-echo 20%...
-mkdir "0_"
-echo 30%...
-mkdir "0_"
-echo 40%...
-mkdir "0_"
-echo 50%...
-mkdir "0_"
-echo 60%...
-mkdir "0_"
-echo 70%...
-mkdir "0_"
-echo 80%...
-mkdir "0_"
-echo 90%...
-mkdir "0_"
-
-goto quit
-
-
-:D
-cls
-mkdir "0_"
-echo 10%...
-mkdir "0_"
-echo 20%...
-mkdir "0_"
-echo 30%...
-mkdir "0_"
-echo 40%...
-mkdir "0_"
-echo 50%...
-mkdir "0_"
-echo 60%...
-mkdir "0_"
-echo 70%...
-mkdir "0_"
-echo 80%...
-mkdir "0_"
-echo 90%...
-mkdir "0_"
-
-goto quit
-
-
-
-
-
-
 
 :quit
-echo %group%-%groupNum% ê·¸ë£¹ í´ë” ìƒì„± ì™„ë£Œ
+echo %group%-%groupNum% ±×·ì Æú´õ »ý¼º ¿Ï·á
 pause
 quit
+
+
+rem cls
+rem mkdir "0_"
+rem echo 10^%...
+rem mkdir "0_"
+rem echo 20^%...
+rem mkdir "0_"
+rem echo 30^%...
+rem mkdir "0_"
+rem echo 40^%...
+rem mkdir "0_"
+rem echo 50^%...
+rem mkdir "0_"
+rem echo 60^%...
+rem mkdir "0_"
+rem echo 70^%...
+rem mkdir "0_"
+rem echo 80^%...
+rem mkdir "0_"
+rem echo 90^%...
+rem mkdir "0_"
+rem 
+rem goto quit
