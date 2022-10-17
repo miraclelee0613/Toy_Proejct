@@ -142,6 +142,7 @@ mkdir "03_종이 구기는 소리"
 
 goto quit
 
+
 :A3
 cls
 mkdir "02_귀뚜라미 소리"
@@ -156,6 +157,7 @@ mkdir "03_믹서기 가는 소리"
 mkdir "03_연필깎이 소리"
 
 goto quit
+
 
 :A4
 cls
@@ -172,6 +174,7 @@ mkdir "03_멜로디언 소리"
 
 goto quit
 
+
 :A5
 cls
 mkdir "02_비둘기 소리"
@@ -186,6 +189,7 @@ mkdir "03_호두 까는 소리"
 mkdir "03_레고 소리"
 
 goto quit
+
 
 :A6
 cls
@@ -202,6 +206,7 @@ mkdir "01_시리얼 먹는 소리"
 
 goto quit
 
+
 :A7
 cls
 mkdir "02_새 소리"
@@ -217,6 +222,7 @@ mkdir "03_유리 부딪히는 소리"
 
 goto quit
 
+
 :A8
 cls
 mkdir "02_동물 빗질 소리"
@@ -231,6 +237,7 @@ mkdir "03_드라이기 소리"
 mkdir "03_세탁기 소리"
 
 goto quit
+
 
 :A9
 cls
@@ -248,6 +255,7 @@ echo.
 
 goto quit
 
+
 :A10
 cls
 mkdir "03_휴대용 손풍기 소리"
@@ -262,6 +270,7 @@ mkdir "03_뿅망치 소리"
 mkdir "03_똑딱이 소리"
 
 goto quit
+
 
 :B1
 cls
@@ -278,6 +287,7 @@ mkdir "01_공 치는 소리"
 
 goto quit
 
+
 :B2
 cls
 mkdir "01_줄넘기 하는 소리"
@@ -293,6 +303,7 @@ mkdir "01_혀 튕기는 소리"
 
 goto quit
 
+
 :B3
 cls
 mkdir "03_초인종 소리"
@@ -307,6 +318,7 @@ mkdir "03_지퍼 소리"
 mkdir "03_스티로폼 소리"
 
 goto quit
+
 
 :B4
 cls
@@ -331,6 +343,8 @@ echo 90%...
 mkdir "03_물 내리는 소리"
 
 goto quit
+
+
 :B5
 cls
 mkdir "03_물통 흔드는 소리"
@@ -354,6 +368,7 @@ echo 90%...
 mkdir "03_철 끄는 소리"
 
 goto quit
+
 
 :B6
 cls
@@ -379,6 +394,7 @@ mkdir "01_양치하는 소리"
 
 goto quit
 
+
 :B7
 cls
 mkdir "01_손빨래 하는 소리"
@@ -402,6 +418,7 @@ echo 90%...
 mkdir "01_배추 먹는 소리"
 
 goto quit
+
 
 :B8
 cls
@@ -452,6 +469,7 @@ mkdir "03_공구함 소리"
 
 goto quit
 
+
 :B10
 cls
 mkdir "03_탬버린 소리"
@@ -476,7 +494,7 @@ mkdir "03_당구공 소리"
 
 goto quit
 
-rem ## 
+rem ## C그룹 ##
 
 :C1
 cls
@@ -502,7 +520,82 @@ mkdir "03_아카펠라 소리"
 
 goto quit
 
-:B
+
+:C2
+cls
+mkdir "01_손가락 튕기는 소리"
+echo 10%...
+mkdir "01_딸꾹질 소리"
+echo 20%...
+mkdir "01_꼬로록 거리는 소리"
+echo 30%...
+mkdir "01_요들 소리"
+echo 40%...
+mkdir "03_유리 깨지는 소리"
+echo 50%...
+mkdir "03_세단기 소리"
+echo 60%...
+mkdir "03_다듬이질 소리"
+echo 70%...
+mkdir "03_토치 소리"
+echo 80%...
+mkdir "03_라디오 지지직 소리"
+echo 90%...
+mkdir "03_목탁 소리"
+
+goto quit
+
+
+:C3
+cls
+mkdir "03_망치 소리"
+echo 10%...
+mkdir "03_톱류"
+echo 20%...
+mkdir "03_튀기는 소리"
+echo 30%...
+mkdir "03_계량기 소리"
+echo 40%...
+mkdir "03_스위치 소리"
+echo 50%...
+mkdir "03_기타 튜닝 소리"
+echo 60%...
+mkdir "03_바이올린 튜닝 소리"
+echo 70%...
+mkdir "03_가야금 튜닝 소리"
+echo 80%...
+mkdir "03_우쿠렐레 튜닝 소리"
+echo 90%...
+mkdir "03_색소폰 튜닝 소리"
+
+goto quit
+
+
+:C4
+cls
+mkdir "03_불 타는 소리"
+echo 10%...
+mkdir "03_면도하는 소리"
+echo 20%...
+mkdir "03_조이스틱 소리"
+echo 30%...
+mkdir "03_징 튜닝 소리"
+echo 40%...
+mkdir "03_트랙터 시동 소리"
+echo 50%...
+mkdir "03_이앙기 시동 소리"
+echo 60%...
+mkdir "03_과일나무 터는 소리"
+echo 70%...
+mkdir "03_칫솔살균기 소리"
+echo 80%...
+mkdir "03_착즙기 소리"
+echo 90%...
+mkdir "03_반죽기 소리"
+
+goto quit
+
+:C
 cls
 mkdir "0_"
 echo 10%...
@@ -526,7 +619,7 @@ mkdir "0_"
 
 goto quit
 
-:B
+:C
 cls
 mkdir "0_"
 echo 10%...
@@ -550,7 +643,7 @@ mkdir "0_"
 
 goto quit
 
-:B
+:C
 cls
 mkdir "0_"
 echo 10%...
@@ -574,6 +667,53 @@ mkdir "0_"
 
 goto quit
 
+:C
+cls
+mkdir "0_"
+echo 10%...
+mkdir "0_"
+echo 20%...
+mkdir "0_"
+echo 30%...
+mkdir "0_"
+echo 40%...
+mkdir "0_"
+echo 50%...
+mkdir "0_"
+echo 60%...
+mkdir "0_"
+echo 70%...
+mkdir "0_"
+echo 80%...
+mkdir "0_"
+echo 90%...
+mkdir "0_"
+
+goto quit
+
+:C
+cls
+mkdir "0_"
+echo 10%...
+mkdir "0_"
+echo 20%...
+mkdir "0_"
+echo 30%...
+mkdir "0_"
+echo 40%...
+mkdir "0_"
+echo 50%...
+mkdir "0_"
+echo 60%...
+mkdir "0_"
+echo 70%...
+mkdir "0_"
+echo 80%...
+mkdir "0_"
+echo 90%...
+mkdir "0_"
+
+goto quit
 
 :quit
 echo %group%-%groupNum% 그룹 폴더 생성 완료
