@@ -32,11 +32,13 @@ rem 현재 파일 위치 경로를 작업 위치로
 
 title 현재 경로 : %cd%
 :notice
-echo 	## v1.0.2 업데이트 내역 ##
+echo 	## v1.0.3 업데이트 내역 ##
 echo 	## A그룹 완성 ##
 echo 	## B그룹 완성 ##
-echo 	## C그룹 진행중 ##
+echo 	## C그룹 완성 ##
+echo 	## D그룹 진행중 ##
 echo 	## 배치파일 작업 책임자님께 허락 맡음 ##
+echo 	## ※접두 대분류는 빼는 걸로 결론남. 분기 나눌 것 ##
 echo.
 echo 	프로그램을 실행하려면 아무 키나 누르세요
 pause
@@ -595,7 +597,175 @@ mkdir "03_반죽기 소리"
 
 goto quit
 
-:C
+
+:C5
+cls
+mkdir "03_펄럭이는 소리"
+echo 10%...
+mkdir "03_블라인드 소리"
+echo 20%...
+mkdir "03_급정거(급출발) 하는 소리"
+echo 30%...
+mkdir "03_부채 소리"
+echo 40%...
+mkdir "03_구강세정기 소리"
+echo 50%...
+mkdir "03_호미질 하는 소리"
+echo 60%...
+mkdir "03_제빙기 소리"
+echo 70%...
+mkdir "03_제면기 소리"
+echo 80%...
+mkdir "03_무전기 소리"
+echo 90%...
+mkdir "03_주유하는 소리"
+
+goto quit
+
+
+:C6
+cls
+mkdir "02_돼지 소리"
+echo 10%...
+mkdir "02_말 소리"
+echo 20%...
+mkdir "02_양 소리"
+echo 30%...
+mkdir "01_한숨쉬는 소리"
+echo 40%...
+mkdir "01_헐떡이는 소리"
+echo 50%...
+mkdir "01_웅성거리는 소리"
+echo 60%...
+mkdir "01_헛 구역질 하는 소리"
+echo 70%...
+mkdir "01_기지개 켜는 소리"
+echo 80%...
+mkdir "01_콧노래 소리"
+echo 90%...
+mkdir "03_카드 단말기 소리"
+
+goto quit
+
+
+:C7
+cls
+mkdir "01_휘파람 소리"
+echo 10%...
+mkdir "01_재채기 하는 소리"
+echo 20%...
+mkdir "01_손방귀 소리"
+echo 30%...
+mkdir "03_자동차 경보음"
+echo 40%...
+mkdir "03_방앗간 기계"
+echo 50%...
+mkdir "03_계수기 소리"
+echo 60%...
+mkdir "03_휘젓는 소리"
+echo 70%...
+mkdir "03_체인 돌아가는 소리"
+echo 80%...
+mkdir "03_굽는 소리"
+echo 90%...
+mkdir "03_풍경 소리"
+
+goto quit
+
+
+:C8
+cls
+mkdir "03_삽류"
+echo 10%...
+mkdir "03_펀치류"
+echo 20%...
+mkdir "03_볶는 소리"
+echo 30%...
+mkdir "03_바리깡 소리"
+echo 40%...
+mkdir "03_식기세척기 소리"
+echo 50%...
+mkdir "03_드럼 소리"
+echo 60%...
+mkdir "03_피아노 튜닝 소리"
+echo 70%...
+mkdir "03_거문고 튜닝 소리"
+echo 80%...
+mkdir "03_단소 튜닝 소리"
+echo 90%...
+mkdir "03_장구 튜닝 소리"
+
+goto quit
+
+
+:C9
+cls
+mkdir "0_뿌리는 소리"
+echo 10%...
+mkdir "0_재봉틀 소리"
+echo 20%...
+mkdir "0_꽹과리 튜닝 소리"
+echo 30%...
+mkdir "0_경운기 시동 소리"
+echo 40%...
+mkdir "0_콤바인 시동 소리"
+echo 50%...
+mkdir "0_탈곡기 시동 소리"
+echo 60%...
+mkdir "0_북 소리"
+echo 70%...
+mkdir "0_포장기 소리"
+echo 80%...
+mkdir "0_팬히터 소리"
+echo 90%...
+mkdir "0_뽑기 기계 소리"
+
+goto quit
+
+
+:C10
+cls
+mkdir "03_안마기 소리"
+echo 10%...
+mkdir "03_첼로 소리"
+echo 20%...
+mkdir "03_맷돌 소리"
+echo 30%...
+mkdir "03_큐브 만지는 소리"
+echo 40%...
+mkdir "03_낫질 하는 소리"
+echo 50%...
+mkdir "03_오르골 소리"
+echo 60%...
+mkdir "03_동전분류기 소리"
+echo 70%...
+mkdir "03_도리깨질 소리"
+echo 80%...
+mkdir "03_쿨러거치대 소리"
+echo 90%...
+mkdir "03_샌드백 타격 소리"
+
+goto quit
+
+rem ## D그룹 끝 ##
+
+:D1
+cls
+mkdir "0_파도 소리"
+echo 20%...
+mkdir "0_모닥불 소리"
+echo 40%...
+mkdir "0_꼬르륵 소리"
+echo 60%...
+mkdir "0_젖병 빠는 소리"
+echo 80%...
+mkdir "0_학교 알람소리"
+
+
+goto quit
+
+
+:D
 cls
 mkdir "0_"
 echo 10%...
@@ -619,7 +789,8 @@ mkdir "0_"
 
 goto quit
 
-:C
+
+:D
 cls
 mkdir "0_"
 echo 10%...
@@ -643,7 +814,8 @@ mkdir "0_"
 
 goto quit
 
-:C
+
+:D
 cls
 mkdir "0_"
 echo 10%...
@@ -667,7 +839,8 @@ mkdir "0_"
 
 goto quit
 
-:C
+
+:D
 cls
 mkdir "0_"
 echo 10%...
@@ -691,7 +864,8 @@ mkdir "0_"
 
 goto quit
 
-:C
+
+:D
 cls
 mkdir "0_"
 echo 10%...
@@ -714,6 +888,112 @@ echo 90%...
 mkdir "0_"
 
 goto quit
+
+
+:D
+cls
+mkdir "0_"
+echo 10%...
+mkdir "0_"
+echo 20%...
+mkdir "0_"
+echo 30%...
+mkdir "0_"
+echo 40%...
+mkdir "0_"
+echo 50%...
+mkdir "0_"
+echo 60%...
+mkdir "0_"
+echo 70%...
+mkdir "0_"
+echo 80%...
+mkdir "0_"
+echo 90%...
+mkdir "0_"
+
+goto quit
+
+
+:D
+cls
+mkdir "0_"
+echo 10%...
+mkdir "0_"
+echo 20%...
+mkdir "0_"
+echo 30%...
+mkdir "0_"
+echo 40%...
+mkdir "0_"
+echo 50%...
+mkdir "0_"
+echo 60%...
+mkdir "0_"
+echo 70%...
+mkdir "0_"
+echo 80%...
+mkdir "0_"
+echo 90%...
+mkdir "0_"
+
+goto quit
+
+
+:D
+cls
+mkdir "0_"
+echo 10%...
+mkdir "0_"
+echo 20%...
+mkdir "0_"
+echo 30%...
+mkdir "0_"
+echo 40%...
+mkdir "0_"
+echo 50%...
+mkdir "0_"
+echo 60%...
+mkdir "0_"
+echo 70%...
+mkdir "0_"
+echo 80%...
+mkdir "0_"
+echo 90%...
+mkdir "0_"
+
+goto quit
+
+
+:D
+cls
+mkdir "0_"
+echo 10%...
+mkdir "0_"
+echo 20%...
+mkdir "0_"
+echo 30%...
+mkdir "0_"
+echo 40%...
+mkdir "0_"
+echo 50%...
+mkdir "0_"
+echo 60%...
+mkdir "0_"
+echo 70%...
+mkdir "0_"
+echo 80%...
+mkdir "0_"
+echo 90%...
+mkdir "0_"
+
+goto quit
+
+
+
+
+
+
 
 :quit
 echo %group%-%groupNum% 그룹 폴더 생성 완료
