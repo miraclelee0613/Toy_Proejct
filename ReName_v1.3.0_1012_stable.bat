@@ -223,10 +223,10 @@ echo 	최종파일명 확인 : [%classcode%_%dscode%_%workercode%_%setdate%_001_
 echo. 	###
 rem ##########선택 옵션##########
 echo.
-choice /c 12 /n /m "	1.이름재설정 2.처음으로 돌아가기	0.취소"
-if %errorlevel% equ 0 goto quit
-if %errorlevel% equ 1 goto rename
-if %errorlevel% equ 2 goto OnDirectory
+choice /c ync /m "	y.이름재설정 n.처음으로 돌아가기	c.취소"
+if %errorlevel% equ y goto quit
+if %errorlevel% equ n goto rename
+if %errorlevel% equ c goto OnDirectory
 
 :rename
 set option=rename
