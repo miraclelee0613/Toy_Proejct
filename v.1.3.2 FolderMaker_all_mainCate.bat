@@ -1,7 +1,7 @@
 @echo off
 rem 명령어 복창 끔
 
-rem ### 버전정보	:	v1.3.3_stable for all_mainCate
+rem ### 버전정보	:	v1.3.2_stable for team_mainCate
 rem ### 코드정보	:	https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=superyeoju&logNo=221747717398
 rem ### updated by LJS 
 
@@ -33,8 +33,7 @@ rem 현재 파일 위치 경로를 작업 위치로
 title 현재 경로 : %cd%
 :notice
 rem echo 	## 업데이트 내역 ##
-rem 		## 1.3.3 일부 카테고리 수정
-rem 		## 1.3.2 협업용으로 전환
+rem 		## 1.3.2 
 rem 		## 1.3.1 버그 수정 및 그룹 분류 수정
 rem 		## 1.3.0 대분류 폴더 생성 프로그램 완성
 rem 		## 1.2.0 그룹별이 아닌 카테고리(대분류)별로 생성하는 쪽으로 전환
@@ -143,7 +142,7 @@ rem mkdir "하품하는 소리"&mkdir "호로록 거리는 소리"&mkdir "밟는 소리"&mkdir "환
 rem mkdir "손빨래 하는 소리"&mkdir "젤리 먹는 소리"&mkdir "팝콘먹는 소리"&mkdir "발성연습 소리"&mkdir "옥수수 먹는 소리"&mkdir "치아 부딪히는 소리"&mkdir "귤 먹는 소리"&mkdir "야유하는 소리"&mkdir "쉿 소리"&mkdir "배추 먹는 소리"
 rem mkdir "트림 소리"mkdir "헛기침하는 소리"mkdir "울음 소리"mkdir "긁는 소리"mkdir "이 가는 소리"mkdir "옹알이 하는 소리"mkdir "아카펠라 소리"
 rem mkdir "손가락 튕기는 소리"mkdir "딸꾹질 소리"mkdir "꼬로록 거리는 소리"mkdir "요들 소리"
-mkdir "기침 소리"&mkdir "가글 하는 소리"&mkdir "물 마시는 소리"&mkdir "과자 먹는 소리"&mkdir "코 훌쩍거리는 소리"&mkdir "코 푸는 소리"&mkdir "껌 씹는 소리"&mkdir "땅콩 먹는 소리"&mkdir "침 뱉는 소리"&mkdir "웃음 소리"&mkdir "뽀뽀하는 소리"&mkdir "앓는 소리"&mkdir "기합 넣는 소리"&mkdir "얼음 먹는 소리"&mkdir "사탕 먹는 소리"&mkdir "야채 먹는 소리"&mkdir "사과 먹는 소리"&mkdir "수박 먹는 소리"&mkdir "바게트 먹는 소리"&mkdir "생라면 먹는 소리"&mkdir "배 먹는 소리"&mkdir "무 먹는 소리"&mkdir "시리얼 먹는 소리"&mkdir "박수 소리"&mkdir "세수하는 소리"&mkdir "따귀(찰싹거리는) 소리"&mkdir "가래 끓는 소리"&mkdir "입 푸는 소리"&mkdir "호루라기 소리"&mkdir "비명 소리"&mkdir "걷는 소리"&mkdir "뛰는 소리"&mkdir "공 치는 소리"&mkdir "줄넘기 하는 소리"&mkdir "살 문지르는 소리"&mkdir "물거품 내는 소리"&mkdir "관절 꺾는 소리"&mkdir "참외 먹는 소리"&mkdir "복숭아 먹는 소리"&mkdir "건어물 씹는 소리"&mkdir "튀김 먹는 소리"&mkdir "비트박스 하는 소리"&mkdir "혀 튕기는 소리"&mkdir "하품하는 소리"&mkdir "호로록 거리는 소리"&mkdir "밟는 소리"&mkdir "환호하는 소리"&mkdir "양치하는 소리"&mkdir "손빨래 하는 소리"&mkdir "젤리 먹는 소리"&mkdir "팝콘 먹는 소리"&mkdir "발성연습 소리"&mkdir "옥수수 먹는 소리"&mkdir "치아 부딪히는 소리"&mkdir "귤 먹는 소리"&mkdir "야유하는 소리"&mkdir "쉿 소리"&mkdir "배추 먹는 소리"&mkdir "트림 소리"&mkdir "헛기침하는 소리"&mkdir "울음 소리"&mkdir "긁는 소리"&mkdir "이 가는 소리"&mkdir "옹알이 하는 소리"&mkdir "아카펠라 소리"&mkdir "손가락 튕기는 소리"&mkdir "딸꾹질 소리"&mkdir "꼬로록 거리는 소리"&mkdir "요들 소리"&mkdir "한숨쉬는 소리"&mkdir "헐떡이는 소리"&mkdir "웅성거리는 소리"&mkdir "헛구역질 하는 소리"&mkdir "기지개 켜는 소리"&mkdir "콧노래 소리"&mkdir "휘파람 소리"&mkdir "재채기 하는 소리"&mkdir "손방귀 소리"&mkdir "젖병 빠는 소리"&mkdir "잠꼬대 하는 소리"&mkdir "코 고는 소리"
+mkdir "기침 소리"&mkdir "가글 하는 소리"&mkdir "물 마시는 소리"&mkdir "과자 먹는 소리"&mkdir "코 훌쩍거리는 소리"&mkdir "코 푸는 소리"&mkdir "껌 씹는 소리"&mkdir "땅콩 먹는 소리"&mkdir "침 뱉는 소리"&mkdir "웃음 소리"&mkdir "뽀뽀하는 소리"&mkdir "앓는 소리"&mkdir "기합 넣는 소리"&mkdir "자전거 종소리"&mkdir "휴대폰 소리"&mkdir "얼음 먹는 소리"&mkdir "사탕 먹는 소리"&mkdir "야채 먹는 소리"&mkdir "사과 먹는 소리"&mkdir "수박 먹는 소리"&mkdir "바게트 먹는 소리"&mkdir "생라면 먹는 소리"&mkdir "배 먹는 소리"&mkdir "무 먹는 소리"&mkdir "시리얼 먹는 소리"&mkdir "박수 소리"&mkdir "세수하는 소리"&mkdir "따귀(찰싹거리는) 소리"&mkdir "가래 끓는 소리"&mkdir "입 푸는 소리"&mkdir "호루라기 소리"&mkdir "비명 소리"&mkdir "걷는 소리"&mkdir "뛰는 소리"&mkdir "공 치는 소리"&mkdir "줄넘기 하는 소리"&mkdir "살 문지르는 소리"&mkdir "물거품 내는 소리"&mkdir "관절 꺾는 소리"&mkdir "참외 먹는 소리"&mkdir "복숭아 먹는 소리"&mkdir "건어물 씹는 소리"&mkdir "튀김 먹는 소리"&mkdir "비트박스 하는 소리"&mkdir "혀 튕기는 소리"&mkdir "하품하는 소리"&mkdir "호로록 거리는 소리"&mkdir "밟는 소리"&mkdir "환호하는 소리"&mkdir "양치하는 소리"&mkdir "손빨래 하는 소리"&mkdir "젤리 먹는 소리"&mkdir "팝콘 먹는 소리"&mkdir "발성연습 소리"&mkdir "옥수수 먹는 소리"&mkdir "치아 부딪히는 소리"&mkdir "귤 먹는 소리"&mkdir "야유하는 소리"&mkdir "쉿 소리"&mkdir "배추 먹는 소리"&mkdir "트림 소리"&mkdir "헛기침하는 소리"&mkdir "울음 소리"&mkdir "긁는 소리"&mkdir "이 가는 소리"&mkdir "옹알이 하는 소리"&mkdir "아카펠라 소리"&mkdir "손가락 튕기는 소리"&mkdir "딸꾹질 소리"&mkdir "꼬로록 거리는 소리"&mkdir "요들 소리"&mkdir "한숨쉬는 소리"&mkdir "헐떡이는 소리"&mkdir "웅성거리는 소리"&mkdir "헛구역질 하는 소리"&mkdir "기지개 켜는 소리"&mkdir "콧노래 소리"&mkdir "휘파람 소리"&mkdir "재채기 하는 소리"&mkdir "손방귀 소리"&mkdir "꼬르륵 소리"&mkdir "젖병 빠는 소리"&mkdir "잠꼬대 하는 소리"&mkdir "코 고는 소리"
 
 goto quit
 
@@ -154,7 +153,7 @@ rem mkdir "비둘기 소리"&mkdir "새 소리"&mkdir "동물 빗질 소리"&mkdir "사료 먹는 
 rem mkdir "고양이 소리"&mkdir "풀벌레 소리"&mkdir "벌 소리"&mkdir "매미 소리"&mkdir "까치 소리"&mkdir "나뭇잎 흔들리는 소리"&
 rem mkdir "닭 소리"&mkdir "돌 구르는 소리"&mkdir "물 떨어지는 소리"&mkdir "참새 소리"&mkdir "까마귀 소리"
 rem mkdir "물 흐르는 소리"mkdir "소 소리"mkdir "오리 소리"
-mkdir "비 소리"&mkdir "개 소리"&mkdir "바람 소리"&mkdir "귀뚜라미 소리"&mkdir "모기 소리"&mkdir "비둘기 소리"&mkdir "새 소리"&mkdir "동물 빗질 소리"&mkdir "사료 먹는 소리"&mkdir "고양이 소리"&mkdir "풀벌레 소리"&mkdir "벌 소리"&mkdir "매미 소리"&mkdir "까치 소리"&mkdir "나뭇잎 흔들리는 소리"&mkdir "닭 소리"&mkdir "돌 구르는 소리"&mkdir "물 떨어지는 소리"&mkdir "참새 소리"&mkdir "까마귀 소리"&mkdir "물 흐르는 소리"&mkdir "소 소리"&mkdir "오리 소리"&mkdir "돼지 소리"&mkdir "말 소리"&mkdir "양 소리"&mkdir "파도 소리"&mkdir "모닥불 소리"
+mkdir "비 소리"&mkdir "개소리"&mkdir "바람 소리"&mkdir "귀뚜라미 소리"&mkdir "모기 소리"&mkdir "비둘기 소리"&mkdir "새 소리"&mkdir "동물 빗질 소리"&mkdir "사료 먹는 소리"&mkdir "고양이 소리"&mkdir "풀벌레 소리"&mkdir "벌 소리"&mkdir "매미 소리"&mkdir "까치 소리"&mkdir "나뭇잎 흔들리는 소리"&mkdir "닭 소리"&mkdir "돌 구르는 소리"&mkdir "물 떨어지는 소리"&mkdir "참새 소리"&mkdir "까마귀 소리"&mkdir "물 흐르는 소리"&mkdir "소 소리"&mkdir "오리 소리"&mkdir "돼지 소리"&mkdir "말 소리"&mkdir "양 소리"&mkdir "파도 소리"&mkdir "모닥불 소리"
 
 goto quit
 
@@ -162,7 +161,7 @@ goto quit
 :mc03
 set main="03"
 mkdir "노크 하는 소리"&mkdir "종이 구기는 소리"&mkdir "금속 부딪히는 소리"&mkdir "캔 찌그러지는 소리"&mkdir "도어락 소리"&mkdir "바코드 찍는 소리"&mkdir "필기 하는 소리"&mkdir "타자 치는 소리"&mkdir "테이프 소리"&mkdir "믹서기 가는 소리"&mkdir "연필깎이 소리"&mkdir "수세미질 소리"&mkdir "가스레인지 소리"&mkdir "빻는 소리"&mkdir "쌀 소리"&mkdir "복합기 소리"&mkdir "벨크로 소리"&mkdir "유리 문지르는 소리"&mkdir "피리 소리"&mkdir "멜로디언 소리"&mkdir "과일(야채)깎는 소리"&mkdir "팽이 치는 소리"&mkdir "열쇠 따는 소리"&mkdir "케이블타이 소리"&mkdir "코털정리기 소리"&mkdir "비데 소리"&mkdir "랩핑 소리"&mkdir "호두 까는 소리"&mkdir "레고 소리"&mkdir "비닐 구기는 소리"&mkdir "유리 부딪히는 소리"&mkdir "플라스틱 구기는 소리"&mkdir "스테이플러"&mkdir "커피포트 끓는 소리"&mkdir "자동차 경적 소리"&mkdir "칼질하는 소리"&mkdir "마우스 클릭 하는 소리"&mkdir "시계 소리"&mkdir "드라이기 소리"&mkdir "세탁기 소리"&mkdir "병 따는 소리"&mkdir "빗자루질 소리"&mkdir "전기채 소리"&mkdir "밥솥 소리"&mkdir "사포질 소리"&mkdir "은박지 소리"&mkdir "탄산음료 따르는 소리"&mkdir "캐스터네츠 소리"&mkdir "오토바이 시동 소리"&mkdir "휴대용 손풍기 소리"&mkdir "락카 소리"&mkdir "통조림 따는 소리"&mkdir "보글보글 끓는 소리"&mkdir "장기알 소리"&mkdir "보풀제거기 소리"&mkdir "제모기 소리"&mkdir "의자(책상)삐그덕 소리"&mkdir "뿅망치 소리"&mkdir "똑딱이 소리"&mkdir "초인종 소리"&mkdir "천 찢어지는 소리"&mkdir "의자(책상)끄는 소리"&mkdir "문 여닫는 소리"&mkdir "분무기 소리"&mkdir "전자레인지 소리"&mkdir "라이터 소리"&mkdir "캔 따는 소리"&mkdir "지퍼 소리"&mkdir "스티로폼 소리"&mkdir "천 긁는 소리"&mkdir "카메라 소리"&mkdir "태엽 감는 소리"&mkdir "커튼 소리"&mkdir "뽁뽁이 소리"&mkdir "화투 소리"&mkdir "다리미 소리"&mkdir "전동 드라이버 소리"&mkdir "종이 넘기는 소리"&mkdir "물 내리는 소리"&mkdir "물통 흔드는 소리"&mkdir "트라이앵글 소리"&mkdir "엘리베이터 소리"&mkdir "구슬치는 소리"&mkdir "칠판 긁는 소리"&mkdir "윷 던지는 소리"&mkdir "건조기 소리"&mkdir "지문인식기 소리"&mkdir "수타치는 소리"&mkdir "철 끄는 소리"&mkdir "돌 부딪히는 소리"&mkdir "플라스틱 부딪히는 소리"&mkdir "에어프라이어 소리"&mkdir "바퀴 굴러가는 소리"&mkdir "장난감 소리"&mkdir "칼 가는 소리"&mkdir "동전 떨어지는 소리"&mkdir "빨대 소리"&mkdir "커피머신 소리"&mkdir "풍선 소리"&mkdir "유리 깨지는 소리"&mkdir "세단기 소리"&mkdir "다듬이질 소리"&mkdir "토치 소리"&mkdir "라디오 지지직 소리"&mkdir "목탁 소리"&mkdir "카드 단말기 소리"&mkdir "자동차 경보음 소리"&mkdir "방앗간 기계 소리"&mkdir "계수기 소리"&mkdir "휘젓는 소리"&mkdir "체인 돌아가는 소리"&mkdir "굽는 소리"&mkdir "풍경 소리"&mkdir "학교 알람 소리"&mkdir "화재경보 소리"&mkdir "비상경보 소리"&mkdir "진자운동 모빌 소리"&mkdir "안경세척기 소리"&mkdir "종소리"&mkdir "가스누출 경보소리"&mkdir "나무 갈라지는 소리"&mkdir "전기 소리"&mkdir "스파크 튀는 소리"
-mkdir "PC 소리"&mkdir "휴대폰 소리"&mkdir "자전거 종소리"&mkdir "손빨래 하는 소리"
+mkdir "PC 소리"
 goto quit
 
 
