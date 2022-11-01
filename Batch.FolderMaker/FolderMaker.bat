@@ -1,7 +1,8 @@
 @echo off
 rem 명령어 복창 끔
 
-rem ### 버전정보	:	v1.4.2_snapshot3 for team_mainCate
+rem ### 버전정보	:	v1.4.2_release for all
+rem ### 마지막 업데이트: 22.11.01.
 rem ### 코드정보	:	https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=superyeoju&logNo=221747717398
 rem ### updated by LJS 
 
@@ -33,6 +34,7 @@ rem 현재 파일 위치 경로를 작업 위치로
 title 현재 경로 : %cd%
 :notice
 rem echo 	## 업데이트 내역 ##
+rem 		## d11.01공지사항 추가
 rem 		## 1.4.2 빈폴더 삭제 기능 추가 및 버그 픽스
 rem 		## 1.4.1 버그 수정. 실험중.
 rem 		## 1.4.0 메타통합 및 대분류, 소분류 선택 기능 추가
@@ -57,6 +59,8 @@ rem pause
 rem goto ChoiceGroup
 :start
 :choiceFunction
+echo 	## notice : 3번 빈폴더 기능은 잘 작동하지만 오류메시지가 뜸 ##
+echo 	## 		기능상 문제는 없으나 원본은 백업해두고 사용할 것을 권장함 ##
 echo.
 echo 	## 실행할 기능을 선택해주세요 ##
 echo 	## 1. 대분류 기준 폴더 일괄 생성기 ##
@@ -64,6 +68,7 @@ echo 	## 2. 대분류_소분류 선택 폴더 생성기 ##
 echo 	## 3. 빈 폴더 삭제(실험중인 기능) ##
 echo 	## q. 종료 ##
 echo.
+
 set /p choice="	기능:	"
 
 if %choice% equ 1 goto ChoiceGroup
