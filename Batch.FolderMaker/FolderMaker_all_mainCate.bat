@@ -67,7 +67,7 @@ echo 		## 대분류 기준 폴더 자동생성기입니다 ##
 echo  		## 대분류 코드를 입력하세요 ##
 choice /c 123 /m "	1. 사람의 비언어적 소리 	2. 동물 및 자연 소리 	3. 전자제품 및 생활환경 소리"
 set main=""
-
+@echo on
 if %errorlevel% equ 1 goto mc01
 if %errorlevel% equ 2 goto mc02
 if %errorlevel% equ 3 goto mc03
