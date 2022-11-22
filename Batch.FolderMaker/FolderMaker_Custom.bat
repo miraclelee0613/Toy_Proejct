@@ -32,13 +32,14 @@ cd /d %~dp0
 rem 현재 파일 위치 경로를 작업 위치로
 
 title 현재 경로 : %cd%
+
 :notice
 rem echo 	## 업데이트 내역 ##
 
 rem 		## 1.0.0	첫파일 생성
 
 :start
-set %f_name%=""
+set f_name=""
 echo.
 echo 		## 폴더 연속 생성기입니다. ##
 echo 		## 생성할 폴더명을 입력하고 엔터를 치면 폴더 생성 ##

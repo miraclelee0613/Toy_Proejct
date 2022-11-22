@@ -60,7 +60,7 @@ rem goto ChoiceGroup
 :start
 :choiceFunction
 echo 	## notice : 3번 빈폴더 기능은 잘 작동하지만 오류메시지가 뜸 ##
-echo 	## 		기능상 문제는 없으나 원본은 백업해두고 사용할 것을 권장함 ##
+rem echo 	## 		기능상 문제는 없으나 원본은 백업해두고 사용할 것을 권장함 ##
 echo.
 echo 	## 실행할 기능을 선택해주세요 ##
 echo 	## 1. 대분류 기준 폴더 일괄 생성기 ##
