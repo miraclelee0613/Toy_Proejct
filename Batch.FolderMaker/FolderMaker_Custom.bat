@@ -39,7 +39,12 @@ rem echo 	## 업데이트 내역 ##
 rem 		## 1.0.0	첫파일 생성
 
 :start
+<<<<<<< HEAD
 set f_name=""
+=======
+cls
+set %f_name%=""
+>>>>>>> 6a76ec569c8981c0e2b635a6dafd86b93efaad63
 echo.
 echo 		## 폴더 연속 생성기입니다. ##
 echo 		## 생성할 폴더명을 입력하고 엔터를 치면 폴더 생성 ##
