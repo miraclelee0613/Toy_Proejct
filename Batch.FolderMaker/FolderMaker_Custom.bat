@@ -1,7 +1,7 @@
 @echo off
 rem 명령어 복창 끔
 
-rem ### 버전정보	:	v1.0.0_release for all
+rem ### 버전정보	:	v1.1.0_release for all
 rem ### 마지막 업데이트: 22.11.01.
 
 rem ### updated by LJS 
@@ -36,6 +36,7 @@ title 현재 경로 : %cd%
 :notice
 rem echo 	## 업데이트 내역 ##
 
+rem 		## 1.1.0	실행 기능 선택창 추가 및 빈폴더 삭제 기능, 종료 기능 추가
 rem 		## 1.0.0	첫파일 생성
 
 set list=
