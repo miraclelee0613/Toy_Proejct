@@ -38,23 +38,70 @@ rem echo 	## 업데이트 내역 ##
 
 rem 		## 1.0.0	첫파일 생성
 
-:start
-<<<<<<< HEAD
-set f_name=""
-=======
+set list=
+
+:choice
 cls
-set %f_name%=""
->>>>>>> 6a76ec569c8981c0e2b635a6dafd86b93efaad63
+rem echo 	## notice : 2번 빈폴더 기능은 잘 작동하지만 오류메시지가 뜸 ##
+rem echo 	## 		기능상 문제는 없으나 원본은 백업해두고 사용할 것을 권장함 ##
+echo.
+echo 	## 실행할 기능을 선택해주세요 ##
+echo 	## 1. 폴더 연속 생성기 ##
+echo 	## 2. 빈 폴더 삭제 ##
+echo 	## q. 종료 ##
+echo.
+
+set /p choice="	기능:	"
+
+if %choice% equ 1 goto custom
+if %choice% equ 2 goto RemoveEmptyFolders
+if %choice% equ q exit
+
+:custom
+cls
+rem if list == null (
+rem 	set list=%f_name%
+rem 	echo %list%
+rem ) else (
+rem 	set list=%list%, %f_name%
+rem 	echo %list%
+rem )
+
+set f_name=""
+
+
+echo 생성한 폴더: %list%
 echo.
 echo 		## 폴더 연속 생성기입니다. ##
 echo 		## 생성할 폴더명을 입력하고 엔터를 치면 폴더 생성 ##
-echo 		## 입력없이 엔터를 치면 프로그램 종료입니다. ##
+echo 		## 입력없이 엔터를 치면 시작메뉴로 돌아갑니다. ##
 echo.
 echo 		## 생성할 폴더명을 입력해주세요 ##
 set /p f_name=폴더명 :
-if "%f_name%" == "" (
-	exit
-) else (
-	md "%f_name%
+rem call md1
+
+echo 1
+pause
+
+if "%f_name%" != "" (
+echo 2
+pause
+	md "%f_name%"
+	set list=%list% %f_name%
+	goto custom
 )
-goto start
+
+goto choice
+
+:RemoveEmptyFolders
+for /f "delims=" %%i in ('dir /s /b /ad ^| sort /r') do rd "%%i" 2
+goto choice
+
+
+:md1
+if [%f_name%] == [] (
+	goto choice
+) else (
+	md "%f_name%"
+	set list=%list% %f_name%
+)
