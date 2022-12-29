@@ -44,17 +44,19 @@ cls
 SET found=0
 echo.
 echo 	특정 형식의 파일을 지우는 프로그램입니다.
-echo 	실행하시겠습니까?
-echo 	1. 실행 	2. 프로그램 종료
-set /p choice2="> "
-if %choice2% equ 1 goto choiceext
-if %choice2% equ 2 exit&pause>nul
-goto start
+rem echo 	실행하시겠습니까?
+rem echo 	1. 실행 	2. 프로그램 종료
+rem set /p choice2="> "
+rem if %choice2% equ 1 goto choiceext
+rem if %choice2% equ 2 exit&pause>nul
+rem goto start
 
-:choiceext
-echo.
-ECHO 	지우고자 하는 파일형식을 입력해주세요.
+rem :choiceext
+rem echo.
+echo 	지우고자 하는 파일형식을 입력해주세요.
+echo 	※0 입력시 프로그램 종료
 SET /p ext="> "
+if %ext%==0 exit&pause>nul
 echo.
 :choicerange
 echo 	선택된 형식명 : .%ext%
@@ -63,11 +65,16 @@ echo 	범위를 선택하십시오
 echo 	1. 현재폴더에만 적용(하위폴더x)
 echo 	2. 하위폴더에만 적용(현재폴더x)
 echo 	3. 현재폴더와 하위폴더 모두 적용
+echo 	0. 프로그램 종료
 set /p choice="> "
+if %choice%==0 exit&pause>nul
 cls
 echo 		※경고※
 echo 	선택된 형식 : .%ext%
-echo 	위 형식을 가진 모든 파일이 제거됩니다.
+if %choice%==1 echo 	선택된 범위 : 현재폴더에만 적용(하위폴더x)
+if %choice%==2 echo 	선택된 범위 : 하위폴더에만 적용(현재폴더x)
+if %choice%==3 echo 	선택된 범위 : 현재폴더와 하위폴더 모두 적용
+echo 	위 형식을 가진 모든 파일이 모두 제거됩니다.
 echo 	이 작업은 취소할 수 없습니다.
 echo 	진행하시겠습니까?
 echo 	1.진행 2.처음으로 돌아가기 0.프로그램 종료
