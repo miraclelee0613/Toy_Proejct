@@ -121,19 +121,20 @@ cls
 rem echo 	^<figcaption^>>>html_%linkTail%.txt
 rem echo 	  %figcaption%>>html_%linkTail%.txt
 rem echo 	^</figcaption^>>>html_%linkTail%.txt
-echo ^<p/^>>html_%linkTail%.txt
 echo 	^<audio >>html_%linkTail%.txt
 echo 	  controls^="" >>html_%linkTail%.txt
 echo 	  src^="%srcLink%">>html_%linkTail%.txt
 echo 	  type^="audio/%ext%">>html_%linkTail%.txt
 echo 	^>>>html_%linkTail%.txt
-echo 	^</p^>>>html_%linkTail%.txt
-echo 	^<span class^="fr-video fr-deletable fr-fvc fr-dvi fr-draggable" contenteditable^="false"^>>>html_%linkTail%.txt
+echo 	^<p^>>>html_%linkTail%.txt
+echo 		^<span class^="fr-video fr-deletable fr-fvc fr-dvi fr-draggable" contenteditable^="false"^>>>html_%linkTail%.txt
 echo 	^<video >>html_%linkTail%.txt
 echo 	    class^="fr-fvc fr-dvi fr-draggable" >>html_%linkTail%.txt
 echo 	    controls^="" >>html_%linkTail%.txt
 echo 	    src^="%srcLink%" >>html_%linkTail%.txt
-echo 	^>^</video^>^</span^>^</p^>>>html_%linkTail%.txt
+echo 	^>^</video^>>>html_%linkTail%.txt
+echo 	^<^/span^>>>html_%linkTail%.txt
+echo 	^<^/p^>>>html_%linkTail%.txt
 echo 	^</audio^>>>html_%linkTail%.txt
 echo 	³¡
 puase
@@ -145,7 +146,7 @@ exit
 :makeLink
 set linkTail=%link:~32,33%
 rem echo 	linkTail=%linkTail%
-set srcLink="https://drive.google.com/uc?export=download^&id=%linkTail%"
+set srcLink=https://drive.google.com/uc?export=download^&id=%linkTail%
 rem echo %srcLink%
 pause
 cls
