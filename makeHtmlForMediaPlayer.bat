@@ -111,7 +111,7 @@ echo 	예) mp4, wav, m4a
 set /p ext="ext > "
 
 cls
-echo 	링크 : %ink%
+echo 	링크 : %link%
 echo 	형식 : .%ext%
 
 echo 	구글드라이브 링크로 음악재생 HTML코드를 만드는 기능입니다.
